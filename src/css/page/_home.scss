@@ -1,0 +1,282 @@
+
+.main-categories{
+    padding-bottom: 5rem;
+    background-image: url(../../images/sol.png),url(../../images/sag.png);
+    background-position:60px 100px, right 130px top 170px;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 10%;
+    @include respond(phone) {
+        background-image:none;
+      }
+      @include respond(phone-land) {
+        background-image:none;
+      }
+      @include respond(main-img-resp) {
+        background-position: 18px 100px, right 20px top 170px;
+      }
+      @include respond(main-img-resp-2) {
+        background-position: 40px 100px, right 60px top 170px;
+      }
+      @include respond(main-img-resp-1) {
+        background-image:none;
+      }
+    &__box{
+        padding: 0 10rem;
+        @include respond(phone) {
+            padding:0 1rem;
+          }
+    }
+    &__group{
+        text-align: center;
+    }
+    &__item{
+        padding: .5rem 0;
+        font-size: 1.3rem;
+        width: 100%;
+        &--link{
+            border: 1px solid $color-gray;
+            color: $color-gray;
+            padding: 1rem 1rem;
+            display: block;
+            border-radius: .5rem;
+            font-family:Comfortaa-b;
+            // font-weight: bold;
+            &:hover{
+                border-radius: .5rem;
+                background-color: $color-primary-dark;
+                color: $color-white;
+                border-color:transparent;
+            }
+        }
+    }
+   
+}
+
+
+
+.premium{
+    // margin-top: -10rem;
+    padding-bottom: 5rem;
+}
+
+.symple{
+    padding-bottom: 5rem;
+}
+
+/* section covicka */
+.card__horizontal{
+    background-color: $color-primary;
+    height: 100%;
+    &--img{
+        margin-bottom: 3rem;
+    
+        &-1{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &--text{
+        padding: 5rem 3rem 0 3rem;
+        font-size: 1.92rem;
+        color: $color-white;
+        @include respond(phone) {
+            padding: 2rem 1.5rem 0 1.5rem;
+            font-size: 1.3rem;
+          }
+    }
+    &--textContent{
+        margin: 4rem 0;
+        @include respond(phone) {
+            padding-bottom: 1rem ;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+          }
+    }
+    &--title{
+        font-size: 3.5rem;
+        font-weight: 300;
+        margin-bottom: 2rem;
+        color: $color-white;
+        @include respond(phone) {
+           
+            font-size: 2.5rem;
+          }
+        &-2{
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
+            @include respond(phone) {
+                margin-bottom: 2rem;
+                font-size: 1.8rem;
+              }
+        }
+        &-3{
+            font-size: 4rem;
+            color: $color-white;
+        }
+        &-4{
+            
+            margin-bottom: 2rem!important;
+         
+        }
+        &-5{
+            font-size: 3.5rem;
+            margin-bottom: 4rem;
+            color: $color-white;
+            display: block;
+            @include respond(phone) {
+                margin-bottom: 2rem;
+                font-size: 1.8rem;
+                text-align: center;
+              }
+        }
+        &-6{
+            margin-bottom: 0;
+            @include respond(phone) {
+                
+                font-size: 1.2rem;
+              
+              }
+        }
+      
+    }
+    &--recruitersBox{
+        display: flex;
+        color: $color-white;
+        text-align: center;
+        @include respond(phone) {
+            display: block;
+          }
+    }
+    &--recruiter{
+        flex-basis: 25%;
+        position: relative;
+        &::after{
+            position: absolute;
+            bottom: 7rem;
+            left: 50%;
+            width: 25%;
+            border-bottom: 2px solid $color-white;
+            content: "";
+            z-index: 9999;
+            transform: translateX(-50%);
+            @include respond(phone) {
+              display: none;
+              }
+              @include respond(phone-land) {
+                display: none;
+            }
+            @include respond(tab-port) {
+                display: none;
+            }
+        }
+        @include respond(phone) {
+            margin-bottom: 3rem;
+          }
+    }
+}
+.quote
+{
+  background: url(../../images/min-slide.jpg) no-repeat center center ; 
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.more-vacanse{
+    
+    font-size: 1.4rem;
+    color: $color-gray;
+    &:hover{
+        color: $color-primary-dark;
+    }
+}
+
+.partners {
+    background-color: $color-white;
+    padding: 4rem 1rem;
+    &__title {
+        font-size: 20px;
+        color: $color-gray;
+    }
+
+    &__logo {
+        margin: 40px 0;
+        text-align: center;
+        filter: grayscale(100%);
+        transition: all .2s;
+
+        img {
+            max-width: 100%;
+        }
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+    }
+
+    &__CategoryWork {
+        display: flex;
+        justify-content: center;
+       margin-top: 3rem;
+        @include respond(phone) {
+            display: block;
+          }
+       
+        &--People {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include respond(main-img-resp-1) {
+               justify-content: center;
+              }
+           
+
+            &--link,
+            &--link:link,
+            &--link:visited {
+                color: $color-primary-dark;
+                text-decoration: none;
+                font-size: 1.3rem;
+                padding: 1rem 4rem;
+                background-color: transparent;
+                border: 1px solid $color-primary-dark;
+                text-align: center;
+                border-radius: 5px;
+                transition: all .2s;
+                width: 25rem;
+                display: inline-block;
+                &:hover {
+                    background-color: $color-primary-dark;
+                    border-color: transparent;
+                    color: $color-white;
+                }
+                &:not(:last-child) {
+                    margin-right: 2.5rem;
+                    @include respond(main-img-resp-1) {
+                      margin-right: 0;
+                       }
+                  }
+                @include respond(phone) {
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 1rem;
+                        margin-right: 0;
+                      }
+                  }
+
+                  @include respond(tab-port) {
+                  margin-bottom: 1rem;
+                }
+            }
+
+           
+        }
+    }
+}

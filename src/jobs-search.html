@@ -1,0 +1,2500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobs</title>
+
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main/main.css?v1.93">
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="header">
+                <div class="container">
+                   <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title">Login</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                         <form>
+                             <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                             <input type="password" placeholder="Your password" class="modal__input" name="" value="" placeholder="">
+                             <button type="" class="modal__login">login</button>
+                         </form>
+                     </div>
+
+                     <!-- Modal footer -->
+                     <div class="modal-footer">
+                      <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="modal fade" id="myModal1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+             <form>
+                <input type="text" class="modal__input" name="" value="" placeholder="Your name">
+                <input type="text" class="modal__input" name="" value="" placeholder="Your surname">
+                <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                <input type="password" placeholder="Your password" class="modal__input" name="" value="" placeholder="">
+                <input type="password" placeholder="Confirm password" class="modal__input" name="" value="" placeholder="">
+                <button type="" class="modal__login">login</button>
+            </form>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+      </div>
+  </div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-light ">
+    <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+    <ul class="navbar-nav ml-auto nav__box">
+        <li class="nav-item nav__item  ">
+            <a class="nav__link  nav__link--active" href="#" >
+                Vakansiyalar  
+            </a>
+
+        </li>
+        <li class="nav-item nav__item ">
+            <a class="nav__link " href="#"  >
+                İş axtaranlar
+            </a>
+
+        </li>
+        <li class="nav-item nav__item ">
+            <a class="nav__link " href="#"  >
+                Məqalələr 
+            </a>
+
+        </li>
+        <li class="nav-item nav__item ">
+            <a class="nav__link " data-toggle="modal" data-target="#myModal" href="#" >
+             Daxil ol  
+         </a>
+
+     </li>
+     <li class="nav-item nav__item ">
+        <a class="nav__link " href="#"  >
+            Bizə qoşul
+        </a>
+
+    </li>
+    <li class="nav-item nav__item ">
+        <a class="nav__link " href="#"  data-toggle="modal" data-target="#myModal1" >
+           Qeydiyyat
+       </a>
+
+   </li>
+</ul>
+
+<div class="d-flex">
+    <button class="navbar-toggler" type="button" id="openHeader">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="nav-item nav__item dropdown ">
+        <a class="nav__link nav__link--red " href="#" id="navbarDropdown" role="button"
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        EN
+    </a>
+    <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item langLink" href="#">AZ</a>
+        <a class="dropdown-item langLink" href="#">RU</a>
+        <a class="dropdown-item langLink" href="#">EN</a>
+    </div>
+</div>
+</div>
+<div id="sideMenu" class="nav__side">
+    <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+    <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+        class="flaticon-down-arrow float-right"></i></a>
+        <div class="nav__side--dropdownContainer">
+            <a class="nav__side--link" href="#">Premium</a>
+            <a class="nav__side--link" href="#">VIP</a>
+            <a class="nav__side--link" href="#">Regular</a>
+        </div>
+        <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+            class="flaticon-down-arrow float-right"></i></a>
+            <div class="nav__side--dropdownContainer">
+                <a class="nav__side--link" href="#">Courses</a>
+                <a class="nav__side--link" href="#">Trainings</a>
+                <a class="nav__side--link" href="#">Events</a>
+            </div>
+            <hr class="nav__side-hr">
+            <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__icon"></i>Join</a>
+            <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                class="flaticon-old-fashion-briefcase nav__icon"></i>Employer <i
+                class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Join</a>
+                    <a class="nav__side--link" href="#">Sign up</a>
+                </div>
+                <a href="javascript:void(0)" class="nav__side--link"><i
+                    class="flaticon-plus nav__icon"></i>Post a Job</a>
+                </div>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+</header>
+</div>
+<div class="content">
+    <section>
+        <div class="container">
+            <div class=" text-center">
+                <h1 class="section-headering">VIP Elanlar</h1>
+            </div>
+                            <!--
+                            <div class="jobs">
+                                <div class="jobs__title"><span>Axtarisa əsasən <i class="flaticon-right-arrow"></i></span></div>
+                                <div class="jobs__count">Elan sayi<span>(235)</span></div>
+                                <ul class="jobs__criterias" id="jobs__criterias">
+
+                                </ul>
+                            </div>
+                        -->
+                        <div class="jobs__phone">
+                            <a href="javascript:void(0)" class="jobs__phone-filterLink" onclick="openNav()">Filter</a>
+                            <a href="javascript:void(0)" class="jobs__phone-NewToOldLink">Yeniden eskiye sırala</a>
+                            <div id="mySidenav" class="jobs__phone-filterSidenav">
+                                <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+                                    onclick="closeNav()">&times;</a></div>
+                                    <div class="jobs__phone-body">
+                                        <ul class="jobs__criterias" id="jobs__criterias1">
+
+                                        </ul>
+                                        <a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+                                        onclick="openNav1()">Category</a>
+                                        <div class="jobs__phone-criterias" id="jobs__phone-criteriasCategory">
+                                            <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+                                                onclick="closeNav()">&times;</a></div>
+                                                <div class="jobs__phone-body">
+                                                    <form action="">
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" id="filterForCheckbox3"
+                                                            onkeyup="myFunction3()" placeholder="Recipient's username"
+                                                            aria-label="Recipient's username" aria-describedby="button-addon6">
+                                                            <div class="input-group-append">
+                                                                <button class="btn search-btn__criterias" type="button"
+                                                                id="button-addon6">
+                                                                <i class="flaticon-search"></i>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <ul class="checkbox-list" id="checkbox-list3">
+                                                        <li>
+                                                            <div class="form-check" data-name="Finance">
+                                                                <input class="form-check-input" type="checkbox" data-name="Finance"
+                                                                data-id="1" id="defaultCheck1">
+                                                                <label class="form-check-label form__check__label"
+                                                                for="defaultCheck1">
+                                                                Finance
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check" data-name="Marketing">
+                                                            <input class="form-check-input" type="checkbox"
+                                                            data-name="Marketing" data-id="2" id="defaultCheck2">
+                                                            <label class="form-check-label form__check__label"
+                                                            for="defaultCheck2">
+                                                            Marketing
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check" data-name="Digital">
+                                                        <input class="form-check-input" type="checkbox" data-name="Digital"
+                                                        data-id="3" id="defaultCheck3">
+                                                        <label class="form-check-label form__check__label"
+                                                        for="defaultCheck3">
+                                                        Digital
+                                                    </label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-check" data-name="Sales">
+                                                    <input class="form-check-input" type="checkbox" data-name="Sales"
+                                                    data-id="4" id="defaultCheck4">
+                                                    <label class="form-check-label form__check__label"
+                                                    for="defaultCheck4">
+                                                    Sales
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check" data-name="Education">
+                                                <input class="form-check-input" type="checkbox"
+                                                data-name="Education" data-id="5" id="defaultCheck5">
+                                                <label class="form-check-label form__check__label"
+                                                for="defaultCheck5">
+                                                Education
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check" data-name="Others">
+                                            <input class="form-check-input" type="checkbox" data-name="Others"
+                                            data-id="6" id="defaultCheck6">
+                                            <label class="form-check-label form__check__label"
+                                            for="defaultCheck6">
+                                            Others
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="addFilter">
+                        <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav1()">compile</a>
+                    </div>
+                </div>
+                <a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+                onclick="openNav2()">Subcategory
+            </a>
+            <div class="jobs__phone-criterias" id="jobs__phone-criteriasSubcategory">
+                <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+                    onclick="closeNav()">&times;</a></div>
+                    <div class="jobs__phone-body">
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" id="filterForCheckbox4"
+                                onkeyup="myFunction4()" placeholder="Recipient's username"
+                                aria-label="Recipient's username" aria-describedby="button-addon7">
+                                <div class="input-group-append">
+                                    <button class="btn search-btn__criterias" type="button"
+                                    id="button-addon7">
+                                    <i class="flaticon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="checkbox-list" id="checkbox-list4">
+                            <li>
+                                <div class="form-check" data-name="Driver">
+                                    <input class="form-check-input" type="checkbox" data-name="Driver"
+                                    data-id="7" id="defaultCheck7">
+                                    <label class="form-check-label form__check__label"
+                                    for="defaultCheck7">
+                                    Driver
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check" data-name="Nurse">
+                                <input class="form-check-input" type="checkbox" data-name="Nurse"
+                                data-id="8" id="defaultCheck8">
+                                <label class="form-check-label form__check__label"
+                                for="defaultCheck8">
+                                Nurse
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check" data-name="Translator">
+                            <input class="form-check-input" type="checkbox"
+                            data-name="Translator" data-id="9" id="defaultCheck9">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck9">
+                            Translator
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check" data-name="Beauty Artist">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="Beauty Artist" data-id="10" id="defaultCheck10">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck10">
+                        Beauty Artist
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check" data-name="Restaurant">
+                    <input class="form-check-input" type="checkbox"
+                    data-name="Restaurant" data-id="11" id="defaultCheck11">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck11">
+                    Restaurant
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check" data-name="Courier">
+                <input class="form-check-input" type="checkbox" data-name="Courier"
+                data-id="12" id="defaultCheck12">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck12">
+                Courier
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Security officer">
+            <input class="form-check-input" type="checkbox"
+            data-name="ecurity officer" data-id="13" id="defaultCheck13">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck13">
+            Security officer
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Tourism guide">
+        <input class="form-check-input" type="checkbox"
+        data-name="Tourism guide" data-id="14" id="defaultCheck14">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck14">
+        Tourism guide
+    </label>
+</div>
+</li>
+</ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav2()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav3()">Position</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasPosition">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="filterForCheckbox5"
+                    onkeyup="myFunction5()" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon8">
+                    <div class="input-group-append">
+                        <button class="btn search-btn__criterias" type="button"
+                        id="button-addon8">
+                        <i class="flaticon-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="checkbox-list" id="checkbox-list5">
+                <li>
+                    <div class="form-check" data-name="Administrator">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="Administrator" data-id="15" id="defaultCheck15">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck15">
+                        Administrator
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check" data-name="Cooking">
+                    <input class="form-check-input" type="checkbox" data-name="Cooking"
+                    data-id="16" id="defaultCheck16">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck16">
+                    Cooking
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check" data-name="Washer">
+                <input class="form-check-input" type="checkbox" data-name="Washer"
+                data-id="17" id="defaultCheck17">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck17">
+                Washer
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Beauty Artist">
+            <input class="form-check-input" type="checkbox"
+            data-name="Beauty Artist" data-id="18" id="defaultCheck18">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck18">
+            Beauty Artist
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Restaurant">
+        <input class="form-check-input" type="checkbox"
+        data-name="Restaurant" data-id="19" id="defaultCheck19">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck19">
+        Restaurant
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Courier">
+        <input class="form-check-input" type="checkbox" data-name="Courier"
+        data-id="20" id="defaultCheck20">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck20">
+        Courier
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Security officer">
+        <input class="form-check-input" type="checkbox" data-id="21"
+        id="defaultCheck21">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck21">
+        Security officer
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Tourism guide">
+        <input class="form-check-input" type="checkbox"
+        data-name="Tourism guide" data-id="22" id="defaultCheck22">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck22">
+        Tourism guide
+    </label>
+</div>
+</li>
+</ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav3()">compile</a>
+</div>
+</div>
+
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav5()">Employment
+type</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasEmploymentType">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <ul class="checkbox-list">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                            data-name="Full Time" data-id="15" id="defaultCheck15">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck15">
+                            Full Time
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="Part Time" data-id="16" id="defaultCheck16">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck16">
+                        Part Time
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"
+                    data-name="Freelance" data-id="17" id="defaultCheck17">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck17">
+                    Freelance
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="Non-paid internship" data-id="18"
+                id="defaultCheck18">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck18">
+                Non-paid internship
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="Paid internship" data-id="19" id="defaultCheck19">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck19">
+            Paid internship
+        </label>
+    </div>
+</li>
+</ul>
+</form>
+
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav5()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav6()">Professional
+Experience</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasExperience">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <ul class="checkbox-list">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                            data-name="under 1 year" data-id="20" id="defaultCheck20">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck20">
+                            under 1 year
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="1-3 years" data-id="21" id="defaultCheck21">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck21">
+                        1-3 years
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-name="3+ year"
+                    data-id="22" id="defaultCheck22">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck22">
+                    3+ year
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="No matter" data-id="23" id="defaultCheck23">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck23">
+                No matter
+            </label>
+        </div>
+    </li>
+</ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav6()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink" onclick="openNav7()">Academic
+background</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasBackground">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <ul class="checkbox-list">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                            data-name="Bachelor degree" data-id="24" id="defaultCheck24">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck24">
+                            Bachelor degree
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="Master degree" data-id="25" id="defaultCheck25">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck25">
+                        Master degree
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox"
+                    data-name="No matter" data-id="26" id="defaultCheck26">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck26">
+                    No matter
+                </label>
+            </div>
+        </li>
+    </ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav7()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav8()">Location</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasLocation">
+    <div class="jobs__phone-close">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    </div>
+    <div class="jobs__phone-body">
+        <form action="">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="filterForCheckbox6"
+                onkeyup="myFunction6()" placeholder="Recipient's username"
+                aria-label="Recipient's username" aria-describedby="button-addon9">
+                <div class="input-group-append">
+                    <button class="btn search-btn__criterias" type="button"
+                    id="button-addon9">
+                    <i class="flaticon-search"></i>
+                </button>
+            </div>
+        </div>
+        <ul class="checkbox-list" id="checkbox-list6">
+            <li>
+                <div class="form-check" data-name="Baku">
+                    <input class="form-check-input" type="checkbox" data-name="Baku"
+                    data-id="27" id="defaultCheck27">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck27">
+                    Baku
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check" data-name="Quba">
+                <input class="form-check-input" type="checkbox" data-name="Quba"
+                data-id="28" id="defaultCheck28">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck28">
+                Quba
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Naxcivan">
+            <input class="form-check-input" type="checkbox" data-name="Naxcivan"
+            data-id="29" id="defaultCheck29">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck29">
+            Naxcivan
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Ismayilli">
+        <input class="form-check-input" type="checkbox"
+        data-name="Ismayilli" data-id="30" id="defaultCheck30">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck30">
+        Ismayilli
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Seki">
+        <input class="form-check-input" type="checkbox" data-name="Seki"
+        data-id="31" id="defaultCheck31">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck31">
+        Seki
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Sirvan">
+        <input class="form-check-input" type="checkbox" data-name="Sirvan"
+        data-id="32" id="defaultCheck32">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck32">
+        Sirvan
+    </label>
+</div>
+</li>
+
+</ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav8()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink" onclick="openNav9()">Language
+of announcement</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasAnnouncement">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <ul class="checkbox-list">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox"
+                            data-name="Azerbaijani" data-id="33" id="defaultCheck33">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck33">
+                            Azerbaijani
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" data-name="Russian"
+                        data-id="34" id="defaultCheck34">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck34">
+                        Russian
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-name="English"
+                    data-id="35" id="defaultCheck35">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck35">
+                    English
+                </label>
+            </div>
+        </li>
+    </ul>
+</form>
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn" onclick="closeNav9()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav10()">Date</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasDate">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <ul class="checkbox-list">
+                    <li>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" data-name="1 day"
+                            data-id="36" id="defaultCheck36">
+                            <label class="form-check-label form__check__label"
+                            for="defaultCheck36">
+                            1 day
+                        </label>
+                    </div>
+                </li>
+                <li>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" data-name="2 day"
+                        data-id="37" id="defaultCheck37">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck37">
+                        2 day
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" data-name="3 day"
+                    data-id="38" id="defaultCheck38">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck38">
+                    3 day
+                </label>
+            </div>
+        </li>
+    </ul>
+    <h3>deadline</h3>
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" data-name="1 day"
+                data-id="39" id="defaultCheck39">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck39">
+                1 day
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" data-name="2 day"
+            data-id="40" id="defaultCheck40">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck40">
+            2 day
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" data-name="3 day"
+        data-id="41" id="defaultCheck41">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck41">
+        3 day
+    </label>
+</div>
+</li>
+</ul>
+</form>
+
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn"
+    onclick="closeNav10()">compile</a>
+</div>
+</div>
+<a href="javascript:void(0)" class="jobs__phone-criteriasLink"
+onclick="openNav11()">Language
+of required</a>
+<div class="jobs__phone-criterias" id="jobs__phone-criteriasRequired">
+    <div class="jobs__phone-close"><a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a></div>
+        <div class="jobs__phone-body">
+            <form action="">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="filterForCheckbox7"
+                    onkeyup="myFunction7()" placeholder="Recipient's username"
+                    aria-label="Recipient's username" aria-describedby="button-addon10">
+                    <div class="input-group-append">
+                        <button class="btn search-btn__criterias" type="button"
+                        id="button-addon10">
+                        <i class="flaticon-search"></i>
+                    </button>
+                </div>
+            </div>
+            <ul class="checkbox-list" id="checkbox-list7">
+                <li>
+                    <div class="form-check" data-name="Azerbaijani">
+                        <input class="form-check-input" type="checkbox"
+                        data-name="Azerbaijani" data-id="42" id="defaultCheck42">
+                        <label class="form-check-label form__check__label"
+                        for="defaultCheck42">
+                        Azerbaijani
+                    </label>
+                </div>
+            </li>
+            <li>
+                <div class="form-check" data-name="Russian">
+                    <input class="form-check-input" type="checkbox" data-name="Russian"
+                    data-id="43" id="defaultCheck43">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck43">
+                    Russian
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check" data-name="English">
+                <input class="form-check-input" type="checkbox" data-name="English"
+                data-id="44" id="defaultCheck44">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck44">
+                English
+            </label>
+        </div>
+    </li>
+
+</ul>
+</form>
+
+</div>
+<div class="addFilter">
+    <a href="javascript:void(0)" class="addFilter-btn"
+    onclick="closeNav11()">compile</a>
+</div>
+</div>
+<form action="">
+    <h5 class="div-headering">İLAN DETAYLARI</h5>
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" data-name="Azerbaijani"
+                data-id="45" id="defaultCheck45">
+                <label class="form-check-label form__check__label" for="defaultCheck45">
+                    Engelli İlanları
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" data-name="Russian"
+                data-id="46" id="defaultCheck46">
+                <label class="form-check-label form__check__label" for="defaultCheck46">
+                    Sadece Yurtdışı İlanları
+                </label>
+            </div>
+        </li>
+
+
+    </ul>
+</form>
+
+</div>
+<div class="addFilter"><a class="addFilter-btn" href="javascript:void(0)" id="addFilter">add
+filter</a></div>
+</div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-9">
+                        <!--
+                        <div class="jobs__notFound">
+                            <p>Axtarışa uyğun nəticə tapılmadı</p>
+                            <p> <i class="flaticon-magnifying-glass"></i> </p>
+                        </div>
+                    -->
+
+                    <div class="jobs-card jobs-card--2">
+                        <div class="jobs-card__premium"><i
+                            class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                            <div class="jobs-card__heart jobs-card__heart--primary ">
+                                <i class="flaticon-like  jobs-card__heart--icon"></i>
+                            </div>
+                            <!-- <div class="loader-box">
+                                <div class="loader"></div>
+                            </div> -->
+
+                            <div class="jobs-card__describtion" id="desc">
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                    İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                    language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                    İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                    language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#">
+
+                                <div class="jobs-card__text">
+                                    <div class="jobs-card__jobsName" id="hover">
+                                        <a href="#">
+                                            <p>Graphic & web designer </p>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <div class="jobs-card__companyName">
+                                            <p>Avirdigital Agency</p>
+                                        </div>
+                                        <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                            <p>350 <span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="jobs-card__date"><i
+                                            class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                        </div>
+                                        <div class="jobs-card__location"><i
+                                            class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                            Azerbaijan</span></div>
+                                            <div class="jobs-card__btn">
+                                                <button class="myBtn  ">Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="jobs-card jobs-card--2">
+                        <div class="jobs-card__premium"><i
+                            class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                            <div class="jobs-card__heart jobs-card__heart--primary ">
+                                <i class="flaticon-like  jobs-card__heart--icon"></i>
+                            </div>
+                            <!-- <div class="loader-box">
+                                <div class="loader"></div>
+                            </div> -->
+
+                            <div class="jobs-card__describtion" id="desc">
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                    İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                    language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                    İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                    language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#">
+
+                                <div class="jobs-card__text">
+                                    <div class="jobs-card__jobsName" id="hover">
+                                        <a href="#">
+                                            <p>Graphic & web designer </p>
+                                        </a>
+                                    </div>
+
+                                    <div>
+                                        <div class="jobs-card__companyName">
+                                            <p>Avirdigital Agency</p>
+                                        </div>
+                                        <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                            <p>350 <span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="jobs-card__date"><i
+                                            class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                        </div>
+                                        <div class="jobs-card__location"><i
+                                            class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                            Azerbaijan</span></div>
+                                            <div class="jobs-card__btn">
+                                                <button class="myBtn  ">Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </a>
+                            </div>
+                            <div class="jobs-card jobs-card--2">
+                                <div class="jobs-card__premium"><i
+                                    class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                                    <div class="jobs-card__heart jobs-card__heart--primary ">
+                                        <i class="flaticon-like  jobs-card__heart--icon"></i>
+                                    </div>
+                                    <div class="loader-box">
+                                        <div class="loader"></div>
+                                    </div>
+                            <!-- <div class="jobs-card__describtion">
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                    fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                    perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                            İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                            language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit.
+                                    Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                    fugit porro?</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                    <li><span class="jobs-card__describtion-list">activity</span></li>
+                                    <li><span class="jobs-card__describtion-list">creative</span></li>
+                                </ul>
+                                <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Harum sunt nulla cumque aliquam
+                                    odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                    cum
+                                    perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                <ul>
+                                    <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                            İllustrator</span></li>
+                                    <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                            language</span></li>
+                                    <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                    </li>
+                                </ul>
+                            </div> -->
+                            <a href="#">
+                                <div class="jobs-card__text">
+                                    <div class="jobs-card__jobsName">
+                                        <p>Graphic & web designer </p>
+                                    </div>
+
+                                    <div>
+                                        <div class="jobs-card__companyName">
+                                            <p>Avirdigital Agency</p>
+                                        </div>
+                                        <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                            <p>350 <span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="jobs-card__date"><i
+                                            class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                        </div>
+                                        <div class="jobs-card__location"><i
+                                            class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                            Azerbaijan</span></div>
+                                            <div class="jobs-card__btn">
+                                                <button class="myBtn  ">Details</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class=" text-center">
+                                <h1 class="section-headering">iş Elanları</h1>
+                            </div>
+
+                            <div class="jobs-card">
+                                <div class="jobs-card__premium"><i
+                                    class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                                    <div class="jobs-card__heart jobs-card__heart--primary "><i
+                                        class="flaticon-favorite-heart-button jobs-card__heart--icon"></i></div>
+                                        <div class="loader-box">
+                                            <div class="loader"></div>
+                                        </div>
+                                        <div class="jobs-card__describtion">
+                                            <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                            <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                                Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                            fugit porro?</p>
+                                            <ul>
+                                                <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                <li><span class="jobs-card__describtion-list">creative</span></li>
+                                            </ul>
+                                            <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                            <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Harum sunt nulla cumque aliquam
+                                                odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                cum
+                                            perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                            <ul>
+                                                <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                İllustrator</span></li>
+                                                <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                language</span></li>
+                                                <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                </li>
+                                            </ul>
+                                            <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                            <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                adipisicing elit.
+                                                Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                            fugit porro?</p>
+                                            <ul>
+                                                <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                <li><span class="jobs-card__describtion-list">creative</span></li>
+                                            </ul>
+                                            <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                            <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Harum sunt nulla cumque aliquam
+                                                odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                cum
+                                            perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                            <ul>
+                                                <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                İllustrator</span></li>
+                                                <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                language</span></li>
+                                                <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="jobs-card__text">
+                                            <div class="jobs-card__jobsName">
+                                                <p>Graphic & web designer </p>
+                                            </div>
+
+                                            <div>
+                                                <div class="jobs-card__companyName">
+                                                    <p>Avirdigital Agency</p>
+                                                </div>
+                                                <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                                    <p>350 <span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="jobs-card__date"><i
+                                                    class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                                </div>
+                                                <div class="jobs-card__location"><i
+                                                    class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                                    Azerbaijan</span></div>
+                                                    <div class="jobs-card__btn">
+                                                        <button class="myBtn  ">Details</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="jobs-card">
+                                            <div class="jobs-card__premium"><i
+                                                class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                                                <div class="jobs-card__heart jobs-card__heart--primary "><i
+                                                    class="flaticon-favorite-heart-button jobs-card__heart--icon"></i></div>
+                                                    <div class="loader-box">
+                                                        <div class="loader"></div>
+                                                    </div>
+                                                    <div class="jobs-card__describtion">
+                                                        <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                                        <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit.
+                                                            Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                                        fugit porro?</p>
+                                                        <ul>
+                                                            <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                            <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                            <li><span class="jobs-card__describtion-list">creative</span></li>
+                                                        </ul>
+                                                        <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                                        <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing elit. Harum sunt nulla cumque aliquam
+                                                            odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                            cum
+                                                        perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                                        <ul>
+                                                            <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                            İllustrator</span></li>
+                                                            <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                            language</span></li>
+                                                            <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                            </li>
+                                                        </ul>
+                                                        <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                                        <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit.
+                                                            Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                                        fugit porro?</p>
+                                                        <ul>
+                                                            <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                            <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                            <li><span class="jobs-card__describtion-list">creative</span></li>
+                                                        </ul>
+                                                        <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                                        <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                            adipisicing elit. Harum sunt nulla cumque aliquam
+                                                            odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                            cum
+                                                        perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                                        <ul>
+                                                            <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                            İllustrator</span></li>
+                                                            <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                            language</span></li>
+                                                            <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="jobs-card__text">
+                                                        <div class="jobs-card__jobsName">
+                                                            <p>Graphic & web designer </p>
+                                                        </div>
+
+                                                        <div>
+                                                            <div class="jobs-card__companyName">
+                                                                <p>Avirdigital Agency</p>
+                                                            </div>
+                                                            <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                                                <p>350 <span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <div class="jobs-card__date"><i
+                                                                class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                                            </div>
+                                                            <div class="jobs-card__location"><i
+                                                                class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                                                Azerbaijan</span></div>
+                                                                <div class="jobs-card__btn">
+                                                                    <button class="myBtn  ">Details</button>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="jobs-card">
+                                                        <div class="jobs-card__premium"><i
+                                                            class="flaticon-premium-badge jobs-card__premium--icon"></i></div>
+                                                            <div class="jobs-card__heart jobs-card__heart--primary "><i
+                                                                class="flaticon-favorite-heart-button jobs-card__heart--icon"></i></div>
+                                                                <div class="loader-box">
+                                                                    <div class="loader"></div>
+                                                                </div>
+                                                                <div class="jobs-card__describtion">
+                                                                    <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                                                    <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                                                    fugit porro?</p>
+                                                                    <ul>
+                                                                        <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">creative</span></li>
+                                                                    </ul>
+                                                                    <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                                                    <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing elit. Harum sunt nulla cumque aliquam
+                                                                        odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                                        cum
+                                                                    perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                                                    <ul>
+                                                                        <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                                        İllustrator</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                                        language</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <h3 class="jobs-card__describtion-heading">About jobs</h3>
+                                                                    <p class="jobs-card__describtion-text">Lorem ipsum dolor sit amet consectetur
+                                                                        adipisicing elit.
+                                                                        Ipsam aperiam maiores perspiciatis minima iure? Pariatur corporis quasi cumque
+                                                                    fugit porro?</p>
+                                                                    <ul>
+                                                                        <li><span class="jobs-card__describtion-list">responsibility</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">activity</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">creative</span></li>
+                                                                    </ul>
+                                                                    <h3 class="jobs-card__describtion-heading">DUTIES & RESPONSIBILITIES</h3>
+                                                                    <p class="jobs-card__describtion-text"> Lorem ipsum dolor sit amet, consectetur
+                                                                        adipisicing elit. Harum sunt nulla cumque aliquam
+                                                                        odio quibusdam reprehenderit, pariatur praesentium? Omnis quidem, placeat atque
+                                                                        cum
+                                                                    perspiciatis incidunt natus sequi temporibus in optio.</p>
+                                                                    <ul>
+                                                                        <li><span class="jobs-card__describtion-list">Adobe XD, Adobe Photoshop, Adobe
+                                                                        İllustrator</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">High quality English, Russian
+                                                                        language</span></li>
+                                                                        <li><span class="jobs-card__describtion-list">Experience about advertising</span>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="jobs-card__text">
+                                                                    <div class="jobs-card__jobsName">
+                                                                        <p>Graphic & web designer </p>
+                                                                    </div>
+
+                                                                    <div>
+                                                                        <div class="jobs-card__companyName">
+                                                                            <p>Avirdigital Agency</p>
+                                                                        </div>
+                                                                        <div class="jobs-card__salary  jobs-card__salary--darkRed">
+                                                                            <p>350 <span class="azn">M</span> - 1500<span class="azn">M</span></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div class="jobs-card__date"><i
+                                                                            class="flaticon-clock jobs-card__date--icon"></i><span>11/10/2018</span>
+                                                                        </div>
+                                                                        <div class="jobs-card__location"><i
+                                                                            class="flaticon-placeholder jobs-card__location--icon"></i><span>Baku,
+                                                                            Azerbaijan</span></div>
+                                                                            <div class="jobs-card__btn">
+                                                                                <button class="myBtn  ">Details</button>
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+
+                        <!-- <nav aria-label="Page navigation example d-none">
+                            <ul class="pagination">
+        
+                                <li><a href="https://jobustan.com/az/job-search?page=1" rel="prev">«</a></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=1">1</a></li>
+                                <li class="active"><span>2</span></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=3">3</a></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=4">4</a></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=5">5</a></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=6">6</a></li>
+                                <li><a href="https://jobustan.com/az/job-search?page=3" rel="next">»</a></li>
+                            </ul>
+        
+        
+                        </nav> -->
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="filter-criterias">
+                            <form>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control search__criterias"
+                                    placeholder="Recipient's username" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn search-btn__criterias" type="button" id="button-addon2">
+                                            <i class="flaticon-magnifying-glass"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="student">
+                                    <ul class="checkbox-list">
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" data-name="For students"
+                                                data-id="47" id="defaultCheck47">
+                                                <label class="form-check-label form__check__label" for="defaultCheck47">
+                                                    For students
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox"
+                                                data-name="For disabled people" data-id="48" id="defaultCheck48">
+                                                <label class="form-check-label form__check__label" for="defaultCheck48">
+                                                    For disabled people
+                                                </label>
+                                            </div>
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accord">
+                                        <div class="accord__header" id="headingOne">
+                                            <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            Category<i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+                                        </button>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="input-group p-10">
+                                        <input type="text" class="form-control br-1r" id="filterForCheckbox"
+                                        onkeyup="myFunction()" placeholder="Recipient's username"
+                                        aria-label="Recipient's username" aria-describedby="button-addon3">
+                                    </div>
+                                    <div class="accord__body">
+
+                                        <ul id="checkbox-list" class="checkbox-list">
+                                            <li>
+                                                <div class="form-check" data-name="Finance">
+                                                    <input class="form-check-input" type="checkbox"
+                                                    data-name="Finance" data-id="49" id="defaultCheck49">
+                                                    <label class="form-check-label form__check__label"
+                                                    for="defaultCheck49">
+                                                    Finance
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="form-check" data-name="Marketing">
+                                                <input class="form-check-input" type="checkbox"
+                                                data-name="Marketing" data-id="50" id="defaultCheck50">
+                                                <label class="form-check-label form__check__label"
+                                                for="defaultCheck50">
+                                                Marketing
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form-check" data-name="Digital">
+                                            <input class="form-check-input" type="checkbox"
+                                            data-name="Digital" data-id="51" id="defaultCheck51">
+                                            <label class="form-check-label form__check__label"
+                                            for="defaultCheck51">
+                                            Digital
+                                        </label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="form-check" data-name="Sales">
+                                        <input class="form-check-input" type="checkbox"
+                                        data-name="Sales" data-id="52" id="defaultCheck52">
+                                        <label class="form-check-label form__check__label"
+                                        for="defaultCheck52">
+                                        Sales
+                                    </label>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="form-check" data-name="Education">
+                                    <input class="form-check-input" type="checkbox"
+                                    data-name="Education" data-id="53" id="defaultCheck53">
+                                    <label class="form-check-label form__check__label"
+                                    for="defaultCheck53">
+                                    Education
+                                </label>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-check" data-name="Others">
+                                <input class="form-check-input" type="checkbox"
+                                data-name="Others" data-id="54" id="defaultCheck54">
+                                <label class="form-check-label form__check__label"
+                                for="defaultCheck54">
+                                Others
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="accord">
+        <div class="accord__header" id="headingCompany">
+            <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+            data-target="#collapseCompany" aria-expanded="true"
+            aria-controls="collapseCompany">
+            Company<i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+        </button>
+    </div>
+    
+    <div id="collapseCompany" class="collapse show" aria-labelledby="headingCompany"
+    data-parent="#accordionExample">
+    <div class="input-group p-10">
+        <input type="text" class="form-control br-1r" id="filterForCheckbox10"
+        onkeyup="myFunctionCompany()" placeholder="Recipient's username"
+        aria-label="Recipient's username" aria-describedby="button-addon3">
+    </div>
+    <div class="accord__body">
+
+        <ul id="checkbox-list10" class="checkbox-list">
+            <li>
+                <div class="form-check" data-name="Finance">
+                    <input class="form-check-input" type="checkbox"
+                    data-name="Finance" data-id="149" id="defaultCheck149">
+                    <label class="form-check-label form__check__label"
+                    for="defaultCheck149">
+                    Finance
+                </label>
+            </div>
+        </li>
+        <li>
+            <div class="form-check" data-name="command">
+                <input class="form-check-input" type="checkbox"
+                data-name="command" data-id="249" id="defaultCheck249">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck249">
+                command
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="many">
+            <input class="form-check-input" type="checkbox"
+            data-name="many" data-id="349" id="defaultCheck349">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck349">
+            many
+        </label>
+    </div>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class=" accord">
+    <div class="card-header card__criterias accord__header" id="headingTwo">
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseTwo" aria-expanded="false"
+        aria-controls="collapseTwo">
+        Subcategory <i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseTwo" class="collapse " aria-labelledby="headingTwo"
+data-parent="#accordionExample">
+<div class="input-group p-10">
+    <input type="text" class="form-control" id="filterForCheckbox1"
+    onkeyup="myFunction1()" placeholder="Recipient's username"
+    aria-label="Recipient's username" aria-describedby="button-addon3">
+</div>
+<div class="card-body card__criterias--body">
+
+    <ul id="checkbox-list1" class="checkbox-list">
+        <li>
+            <div class="form-check" data-name="Driver">
+                <input class="form-check-input" type="checkbox"
+                data-name="Driver" data-id="55" id="defaultCheck55">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck55">
+                Driver
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Nurse">
+            <input class="form-check-input" type="checkbox"
+            data-name="Nurse" data-id="56" id="defaultCheck56">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck56">
+            Nurse
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Translator">
+        <input class="form-check-input" type="checkbox"
+        data-name="Translator" data-id="57" id="defaultCheck57">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck57">
+        Translator
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Beauty Artist">
+        <input class="form-check-input" type="checkbox"
+        data-name="Beauty Artist" data-id="58"
+        id="defaultCheck58">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck58">
+        Beauty Artist
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Restaurant">
+        <input class="form-check-input" type="checkbox"
+        data-name="Restaurant" data-id="59" id="defaultCheck59">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck59">
+        Restaurant
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Courier">
+        <input class="form-check-input" type="checkbox"
+        data-name="Courier" data-id="60" id="defaultCheck60">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck60">
+        Courier
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Security officer">
+        <input class="form-check-input" type="checkbox"
+        data-name="ecurity officer" data-id="61"
+        id="defaultCheck61">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck61">
+        Security officer
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Tourism guide">
+        <input class="form-check-input" type="checkbox"
+        data-name="Tourism guide" data-id="62"
+        id="defaultCheck62">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck62">
+        Tourism guide
+    </label>
+</div>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingThree">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseThree" aria-expanded="false"
+        aria-controls="collapseThree">
+        Position<i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseThree" class="collapse " aria-labelledby="headingThree"
+data-parent="#accordionExample">
+<div class="input-group p-10">
+    <input type="text" class="form-control" id="filterForCheckbox2"
+    onkeyup="myFunction2()" placeholder="Recipient's username"
+    aria-label="Recipient's username" aria-describedby="button-addon3">
+</div>
+<div class="card-body card__criterias--body">
+
+    <ul id="checkbox-list2" class="checkbox-list">
+        <li>
+            <div class="form-check" data-name="Administrator">
+                <input class="form-check-input" type="checkbox"
+                data-name="Administrator" data-id="63"
+                id="defaultCheck63">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck63">
+                Administrator
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Cooking">
+            <input class="form-check-input" type="checkbox"
+            data-name="Cooking" data-id="64" id="defaultCheck64">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck64">
+            Cooking
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Washer">
+        <input class="form-check-input" type="checkbox"
+        data-name="Washer" data-id="65" id="defaultCheck65">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck65">
+        Washer
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Beauty Artist">
+        <input class="form-check-input" type="checkbox"
+        data-name="Beauty Artist" data-id="66"
+        id="defaultCheck66">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck66">
+        Beauty Artist
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Restaurant">
+        <input class="form-check-input" type="checkbox"
+        data-name="Restaurant" data-id="67" id="defaultCheck67">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck67">
+        Restaurant
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Courier">
+        <input class="form-check-input" type="checkbox"
+        data-name="Courier" data-id="68" id="defaultCheck68">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck68">
+        Courier
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Security officer">
+        <input class="form-check-input" type="checkbox" data-id="69"
+        id="defaultCheck69">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck69">
+        Security officer
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check" data-name="Tourism guide">
+        <input class="form-check-input" type="checkbox"
+        data-name="Tourism guide" data-id="70"
+        id="defaultCheck70">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck70">
+        Tourism guide
+    </label>
+</div>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="accord">
+    <div class="accord__header" id="headingFour">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseFour" aria-expanded="false"
+        aria-controls="collapseFour">
+        Monthly Salary
+        <i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseFour" class="collapse " aria-labelledby="headingFour"
+data-parent="#accordionExample">
+<div class="accord__body accord__body-salary">
+    <input type="text" class="js-range-slider" name="my_range" id="range"/>
+    <input type="hidden" class="range-min-value"/>
+    <input type="hidden" class="range-max-value"/>
+</div>
+<ul id="checkbox-list" class="checkbox-list pt-10">
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="Negotiable" data-id="271" id="defaultCheck271">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck271">
+            Negotiable
+        </label>
+    </div>
+</li>
+</ul>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingFive">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseFive" aria-expanded="false"
+        aria-controls="collapseFive">
+        Employment type<i
+        class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseFive" class="collapse " aria-labelledby="headingFive"
+data-parent="#accordionExample">
+<div class="card-body card__criterias--body">
+    <ul id="checkbox-list" class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="Full Time" data-id="71" id="defaultCheck71">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck71">
+                Full Time
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="Part Time" data-id="72" id="defaultCheck72">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck72">
+            Part Time
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="Freelance" data-id="73" id="defaultCheck73">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck73">
+        Freelance
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="Non-paid internship" data-id="74"
+        id="defaultCheck74">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck74">
+        Non-paid internship
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="Paid internship" data-id="75"
+        id="defaultCheck75">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck75">
+        Paid internship
+    </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingSix">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseSix" aria-expanded="false"
+        aria-controls="collapseSix">
+        Professional Experience<i
+        class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseSix" class="collapse " aria-labelledby="headingSix"
+data-parent="#accordionExample">
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="under 1 year" data-id="76"
+                id="defaultCheck76">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck76">
+                under 1 year
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="1-3 years" data-id="77" id="defaultCheck77">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck77">
+            1-3 years
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="3+ year" data-id="78" id="defaultCheck78">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck78">
+        3+ year
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="No matter" data-id="79" id="defaultCheck79">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck79">
+        No matter
+    </label>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingSeven">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseSeven" aria-expanded="false"
+        aria-controls="collapseSeven">
+        Academic background<i
+        class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseSeven" class="collapse " aria-labelledby="headingSeven"
+data-parent="#accordionExample">
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="Bachelor degree" data-id="80"
+                id="defaultCheck80">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck80">
+                Bachelor degree
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="Master degree" data-id="81"
+            id="defaultCheck81">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck81">
+            Master degree
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="No matter" data-id="82" id="defaultCheck82">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck82">
+        No matter
+    </label>
+</div>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingEight">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseEight" aria-expanded="false"
+        aria-controls="collapseEight">
+        Location<i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseEight" class="collapse " aria-labelledby="headingEight"
+data-parent="#accordionExample">
+<div class="input-group p-10">
+    <input type="text" class="form-control" id="filterForCheckbox8"
+    onkeyup="myFunction8()" placeholder="Recipient's username">
+</div>
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list" id="checkbox-list8">
+        <li>
+            <div class="form-check" data-name="Baku">
+                <input class="form-check-input" type="checkbox"
+                data-name="Baku" data-id="83" id="defaultCheck83">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck83">
+                Baku
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Quba">
+            <input class="form-check-input" type="checkbox"
+            data-name="Quba" data-id="84" id="defaultCheck84">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck84">
+            Quba
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="Naxciavan">
+        <input class="form-check-input" type="checkbox"
+        data-name="Naxciavan" data-id="85" id="defaultCheck85">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck85">
+        Naxciavan
+    </label>
+</div>
+</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingNine">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseNine" aria-expanded="false"
+        aria-controls="collapseNine">
+        Language of announcement<i
+        class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseNine" class="collapse " aria-labelledby="headingNine"
+data-parent="#accordionExample">
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="Azerbaijani" data-id="86"
+                id="defaultCheck86">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck86">
+                Azerbaijani
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="Russian" data-id="87" id="defaultCheck87">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck87">
+            Russian
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="English" data-id="88" id="defaultCheck88">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck88">
+        English
+    </label>
+</div>
+</li>
+</ul>
+
+
+
+
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingTen">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseTen" aria-expanded="false"
+        aria-controls="collapseTen">
+        Date<i class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseTen" class="collapse " aria-labelledby="headingTen"
+data-parent="#accordionExample">
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list">
+        <li>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox"
+                data-name="1 day" data-id="89" id="defaultCheck89">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck89">
+                1 day
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="2 day" data-id="90" id="defaultCheck90">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck90">
+            2 day
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="3 day" data-id="91" id="defaultCheck91">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck91">
+        3 day
+    </label>
+</div>
+</li>
+</ul>
+<h3 class="pl-20">deadline</h3>
+<ul class="checkbox-list">
+    <li>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox"
+            data-name="1 day" data-id="92" id="defaultCheck92">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck92">
+            1 day
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="2 day" data-id="93" id="defaultCheck93">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck93">
+        2 day
+    </label>
+</div>
+</li>
+<li>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox"
+        data-name="3 day" data-id="94" id="defaultCheck94">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck94">
+        3 day
+    </label>
+</div>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="card mb-10">
+    <div class="card-header card__criterias" id="headingEleven">
+
+        <button class="btn myBtn__accordion" type="button" data-toggle="collapse"
+        data-target="#collapseEleven" aria-expanded="false"
+        aria-controls="collapseEleven">
+        Language of required<i
+        class="flaticon-down-arrow myBtn__accordion--icon"></i>
+    </button>
+
+</div>
+<div id="collapseEleven" class="collapse " aria-labelledby="headingEleven"
+data-parent="#accordionExample">
+<div class="input-group p-10">
+    <input type="text" class="form-control" id="filterForCheckbox9"
+    onkeyup="myFunction9()" placeholder="Recipient's username">
+</div>
+<div class="card-body card__criterias--body">
+    <ul class="checkbox-list" id="checkbox-list9">
+        <li>
+            <div class="form-check" data-name="Azerbaycan">
+                <input class="form-check-input" type="checkbox"
+                data-name="Azerbaycan" data-id="95" id="defaultCheck95">
+                <label class="form-check-label form__check__label"
+                for="defaultCheck95">
+                Azerbaijani
+            </label>
+        </div>
+    </li>
+    <li>
+        <div class="form-check" data-name="Russian">
+            <input class="form-check-input" type="checkbox"
+            data-name="Russian" data-id="96" id="defaultCheck96">
+            <label class="form-check-label form__check__label"
+            for="defaultCheck96">
+            Russian
+        </label>
+    </div>
+</li>
+<li>
+    <div class="form-check" data-name="English">
+        <input class="form-check-input" type="checkbox"
+        data-name="English" data-id="97" id="defaultCheck97">
+        <label class="form-check-label form__check__label"
+        for="defaultCheck97">
+        English
+    </label>
+</div>
+</li>
+
+</ul>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+
+</div>
+
+</section>
+</div>
+
+<div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--page" href="javascript:void(0)">Home</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a>
+                            </li>
+                            <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Recent Jobs</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Premium jobs</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">VIP jobs </a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Regular jobs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><span class="footer__list--title">Trainings</span></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Free trainings</a></li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Discounted trainings</a>
+                            </li>
+                            <li><a class="footer__list--link" href="javascript:void(0)">Tam qiymt</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__row--col">
+                        <ul class="footer__list">
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a>
+                            </li>
+                            <li><a class="footer__list--link" href="javascript:void(0)"><i
+                                class="flaticon-call-answer footer__list--icon"></i>+994 55 123 45 67</a>
+                            </li>
+                            <li>
+                                <ul class="footer__list">
+                                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                        class="flaticon-instagram m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                            class="flaticon-facebook-logo m"></i></a></li>
+                                            <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                                                class="flaticon-linkedin-logo m"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+            <script src="libs/js/owl.carousel.min.js"></script>
+            <script src="libs/js/jquery.inputmask.bundle.js"></script>
+            <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+            <script src="libs/air-datepicker/dist/js/datepicker.min.js"></script>
+            <script src="libs/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+            <script src="libs/Croppie/croppie.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+            <script src="js/all.js"></script>
+
+            <script>
+                $(document).ready(function() {
+                    $("#range").ionRangeSlider({
+                        type: "double",
+                        grid: true,
+                        min: 0,
+                        max: 10000,
+                        from: 400,
+                        to: 800,
+                        step:50,
+                        onFinish: function (data) {
+
+                            $('input[type=hidden].range-min-value').val(data.from);
+                            $('input[type=hidden].range-max-value').val(data.to);
+                        },
+
+                    });
+                });
+            </script>
+        </body>
+
+        </html>

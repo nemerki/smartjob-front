@@ -1,0 +1,163 @@
+
+//MEDIA QUERY MANAGER
+/*
+-sm
+-m
+-lg
+-xl
+
+*/
+
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 450px) { @content };    
+	}
+	@if $breakpoint == phone-land {
+        @media only screen and (min-width: 450px) and (max-width: 600px) { @content };   
+    }
+    @if $breakpoint == tab-port {
+        @media only screen and (min-width: 600px) and (max-width: 900px) { @content };    
+	}
+	@if $breakpoint == desktop {
+        @media only screen and (min-width: 900px) { @content };   
+	}
+	@if $breakpoint == tab-port2 {
+        @media only screen and (min-width: 900px) and (max-width: 991px) { @content };     
+	}
+	@if $breakpoint == ipad-pro {
+        @media only screen and (min-width: 900px) and (max-width: 1200x) { @content };   
+	}
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 1366px) { @content };    
+	}
+	@if $breakpoint == main-img-resp-1 {
+        @media only screen and (max-width: 767px) { @content };   
+    }
+	@if $breakpoint == main-img-resp {
+        @media only screen and (min-width: 768px) and (max-width: 1000px) { @content };   
+	}
+	@if $breakpoint == main-img-resp-2 {
+        @media only screen and (min-width: 1000px) and (max-width: 1200px) { @content };   
+    }
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 1800px) { @content };    //1800
+    }
+}
+
+// @mixin xs {
+//     @media (max-width: #{$xs-max-width}) {
+//         @content;
+//     }
+// }
+// @mixin s {
+//     @media (max-width: #{$s-max-width}) {
+//         @content;
+//     }
+// }
+// @mixin s-md {
+//     @media(min-width: #{$s-max-width}) and (max-width: #{$md-max-width}){
+//         @content;
+//     }
+// }
+// @mixin md {
+//     @media (max-width: #{$md-max-width}) {
+//         @content;
+//     }
+// }
+// @mixin lg {
+//     @media (max-width: #{$lg-max-width}) {
+//         @content;
+//     }
+// }
+// @mixin respondmin($breakpoint){
+// 	@if $breakpoint == sm {
+// 		@media (min-width: 576px) {@content};
+// 	}
+
+// 	@if $breakpoint == md {
+// 		@media (min-width: 768px) {@content};
+// 	}
+
+// 	@if $breakpoint == lg {
+// 		@media (min-width: 992px) {@content};
+// 	}
+
+// 	@if $breakpoint == xl {
+// 		@media (min-width: 1200px) {@content};
+// 	}
+
+	
+// }
+// @mixin respondmax($breakpoint){
+// 	@if $breakpoint == sm {
+// 		@media (max-width: 575px) {@content};
+// 	}
+
+// 	@if $breakpoint == md {
+// 		@media (max-width: 767px) {@content};
+// 	}
+
+// 	@if $breakpoint == lg {
+// 		@media (max-width: 991px) {@content};
+// 	}
+
+// 	@if $breakpoint == xl {
+// 		@media (max-width: 1199px) {@content};
+// 	}
+// }
+
+
+
+
+@mixin font($ff: false, $s: false, $c: false, $w: false,  $lh: false) {
+
+	@if $ff {  font-family: $ff, Helvetica, Arial, sans-serif;}
+	@if $s { font-size: $s; }
+	@if $c { color: $c; }
+	@if $w { font-weight: $w; }
+	@if $lh { line-height: $lh; }
+}
+
+@mixin font-family($font) {
+	font-family: $font;
+	src: url('../../fonts/#{$font}.eot');
+	src: url('../../fonts/#{$font}.eot?#iefix') format('embedded-opentype'),
+	url('../../fonts/#{$font}.woff2') format('woff2'),
+	url('../../fonts/#{$font}.woff') format('woff'),
+	url('../../fonts/#{$font}.ttf') format('truetype'),
+	url('../../fonts/#{$font}.svg##{$font}') format('svg');
+}

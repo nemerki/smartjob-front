@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jobustan</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl.theme.default.css">
+    <link rel="stylesheet" href="libs/default.css?v1.1">
+    <link rel="stylesheet" href="libs/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main/main.css?v1.5">
+    <link href="libs/select2/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="header">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+                        <ul class="navbar-nav ml-auto nav__box">
+                            <li class="nav-item nav__item dropdown ">
+                                <a class="nav__link  nav__link--active" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Jobs
+                                </a>
+                                <!-- <div class="dropdown-menu  nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Premium</a>
+                                    <a class="dropdown-item" href="#">VIP</a>
+                                    <a class="dropdown-item" href="#">Regular</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Career
+                                </a>
+                                <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Courses</a>
+                                    <a class="dropdown-item" href="#">Trainings</a>
+                                    <a class="dropdown-item" href="#">Events</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border" href=""><i
+                                        class="flaticon-man-user nav__icon"></i>Join</a></li>
+                            <li class="nav-item nav__item dropdown">
+                                <a class="nav__link  nav__link--border-gray " href="jobs-search.html"
+                                    id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <i class="flaticon-old-fashion-briefcase nav__icon"></i> Employer
+                                </a>
+                                <!-- <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Join</a>
+                                    <a class="dropdown-item" href="#">Sign up</a>
+                                </div> -->
+                            </li>
+                            <li class="nav-item nav__item"><a class="nav__link nav__link--border-gray" href="">
+                                    <i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <button class="navbar-toggler" type="button" id="openHeader">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <select class="select-language">
+                                <option>EN</option>
+                                <option>AZ</option>
+                                <option>RU</option>
+                            </select>
+                        </div>
+                        <div id="sideMenu" class="nav__side">
+                            <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Premium</a>
+                                <a class="nav__side--link" href="#">VIP</a>
+                                <a class="nav__side--link" href="#">Regular</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Courses</a>
+                                <a class="nav__side--link" href="#">Trainings</a>
+                                <a class="nav__side--link" href="#">Events</a>
+                            </div>
+                            <hr class="nav__side-hr">
+                            <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__phoneIcon"></i>Join</a>
+                            <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                                    class="flaticon-old-fashion-briefcase nav__phoneIcon"></i>Employer <i
+                                    class="flaticon-down-arrow float-right"></i></a>
+                            <div class="nav__side--dropdownContainer">
+                                <a class="nav__side--link" href="#">Join</a>
+                                <a class="nav__side--link" href="#">Sign up</a>
+                            </div>
+                            <a href="javascript:void(0)" class="nav__side--link"><i
+                                    class="flaticon-plus nav__phoneIcon"></i>Post a Job</a>
+                        </div>
+
+
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <div class="content">
+        <section class="main-categories">
+            <div class="container">
+                <div class="main-categories__box">
+                    <form>
+                        <div class="input-group input__group">
+                            <input type="text" class="form-control form__control--homeSeach"
+                                placeholder="Recipient's username" aria-label="Recipient's username"
+                                aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="  search-btn" type="button" id="button-addon2"><i
+                                        class="flaticon-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="text-right mb-10"><a href="#" class="more-vacanse">advanced reseach</a></div>
+                    </form>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="main-categories__group">
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">IT</a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main-categories__group">
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Education </a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main-categories__group">
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Sale</a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                                <div class="main-categories__item">
+                                    <a href="#" class="main-categories__item--link">Kend teserrufatlari ve Senaye </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right"><a href="#" class="more-vacanse">See all categories</a></div>
+                    <div class="partners__CategoryWork ">
+<div  class="partners__CategoryWork--People ">
+    <a class="partners__CategoryWork--People--link" href="#">Jobs for Disabled People</a>
+    <a class="partners__CategoryWork--People--link" href="#">For Student </a>
+    <a class="partners__CategoryWork--People--link" href="#">For Student </a>
+</div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="premium">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                       
+                        <div class="vacance-Card">
+                            <div class="vacance-Card__vip">
+                                <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
+                            </div>
+                            <div class="vacance-Card__heart vacance-Card__heart--white " id="myHeart">
+                                <i class="vacance-Card__heart--icon like-unlike flaticon-like"></i>
+                            </div>
+                            
+                          <a href="https://app.asana.com/0/1109447177852093/1129717130787734">
+                            <div class="vacance-Card__Text">
+                                <div class="vacance-Card__VacanceName">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName">
+                                    <img src="images/Bakcell-logo.png" alt="">
+                                </div>
+                                <div class="vacance-Card__Salary">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn myBtn-white">APPLY</button>
+                                </div>
+                            </div>
+                          </a>
+                        </div>
+                      
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card--darkRed">
+                            <div class="vacance-Card__vip">
+                                <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
+                            </div>
+                            <div class="vacance-Card__heart vacance-Card__heart--white ">
+                                <i class="vacance-Card__heart--icon flaticon-like"></i>
+                            </div>
+                            <div class="vacance-Card__Text">
+                                <div class="vacance-Card__VacanceName">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName">
+                                    <img src="images/Bakcell-logo.png" alt="">
+                                </div>
+                                <div class="vacance-Card__Salary">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn myBtn-white">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card">
+                            <div class="vacance-Card__vip">
+                                <i class="vacance-Card__vip--icon flaticon-premium-badge"></i>
+                            </div>
+                            <div class="vacance-Card__heart vacance-Card__heart--white ">
+                                <i class="vacance-Card__heart--icon flaticon-like"></i>
+                            </div>
+                            <div class="vacance-Card__Text">
+                                <div class="vacance-Card__VacanceName">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName">
+                                    <img src="images/Bakcell-logo.png" alt="">
+                                </div>
+                                <div class="vacance-Card__Salary">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn myBtn-white">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="symple">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card__white mb-20">
+                            <div class="vacance-Card__premium"><i
+                                    class="vacance-Card__premium--icon flaticon-diamond"></i></div>
+                            <div class="vacance-Card__heart vacance-Card__heart--red"><i
+                                    class="vacance-Card__heart--icon flaticon-like"></i></div>
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__VacanceName__darkGray">
+                                    <p>Web Designer</p>
+                                </div>
+                                <div class="vacance-Card__CompanyName__lightGray">
+                                    <p>Avirdigital Agency</p>
+                                </div>
+                                <div class="vacance-Card__Salary__darkRed">
+                                    <p>350<span class="azn">M</span>- 1500<span class="azn">M</span></p>
+                                </div>
+                                <div class="vacance-Card__Button">
+                                    <button class="myBtn">APPLY</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card vacance-Card--darkRed-1 mb-20">
+
+                            <div class="vacance-Card__Text vacance-Card__Text--symple">
+                                <div class="vacance-Card__fav">
+                                    <a class="vacance-Card__fav--link" href="#">Find your
+                                        favorite job! </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="vacance-Card__Text vacance-Card__Text--symple">
+                            <div class="vacance-Card__all">
+                                <a class="vacance-Card__all--link" href="#">See all vacancies <i
+                                        class="flaticon-right-arrow"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="text-right mr-20"><a href="#" class="more-vacanse">view more</a></div>
+            </div>
+        </section>
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="card">
+                        <div class="row no-gutters">
+                            <div class="col-sm-4">
+                                <img src="images/imgleft.jpg"
+                                    class="card__horizontal--img-1 d-none d-md-block d-lg-block d-xl-block" alt="">
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="card-block card__horizontal">
+                                    <div class="card__horizontal--text">
+                                        <h1 class="card__horizontal--title">Recruit with US</h1>
+                                        <p class="card__horizontal--textContent">We’ve designed an integrated approach
+                                            that focuses
+                                            our more innovative technology and expertise into powerful, easy to use
+                                            solutions for
+                                            a better recruitment process, better candidates, better jobs and more.
+                                        </p>
+                                        <h1 class="card__horizontal--title-5">FIND BETTER WITH JOBUSTAN ! </h1>
+                                    </div>
+                                    <div class="card__horizontal--recruitersBox">
+                                        <div class="card__horizontal--recruiter">
+                                            <img class="card__horizontal--img" src="images/user.png" alt="">
+                                            <h4 class="card__horizontal--title-6">WIDER</h4>
+                                            <h4 class="card__horizontal--title-6 card__horizontal--title-4">REACH</h4>
+
+                                        </div>
+                                        <div class="card__horizontal--recruiter">
+                                            <img class="card__horizontal--img" src="images/doc.png" alt="">
+                                            <h4 class="card__horizontal--title-6">BETTER </h4>
+                                            <h4 class="card__horizontal--title-6 card__horizontal--title-4">REPORTING
+                                            </h4>
+
+                                        </div>
+                                        <div class="card__horizontal--recruiter">
+                                            <img class="card__horizontal--img" src="images/speed.png" alt="">
+                                            <h4 class="card__horizontal--title-6">FASTER </h4>
+                                            <h4 class="card__horizontal--title-6 card__horizontal--title-4">HIRING</h4>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners ">
+            <div class="container">
+                <div class="partners__title text-center pb-5">
+                    <h2>OUR PARTNERS</h2>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/Socar_logo.png" alt="Socar_logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/Bakcell_red.png" alt="Bakcell_logo">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/Azercell-logo.png" alt="Azercell_logo">
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/Asos.svg.png" alt="Asos_logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/BP_logo.png" alt="BP_logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/IBM_logo.svg.png" alt="IBM_logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/Nar-new-logo.png" alt="Nar_logo">
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6 ">
+                        <div class="partners__logo">
+                            <img src="images/avirtellogo.png" alt="avirtel_logo">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="partners__CategoryWork ">
+                    <div class="partners__CategoryWork--People ">
+                        <a class="partners__CategoryWork--People--link" href="review.html">ALL COMPANIES</a>
+                        <a class="partners__CategoryWork--People--link" href="#">COMPANY REVIEW </a>
+                    </div>
+                   
+                </div>
+
+            </div>
+
+        </section>
+        <section class="quote">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <div class="card bc-t b-u ">
+                            <div class="ta-c image-card"><img class="card-img-top" src="images/covicka.png"
+                                    alt="Card image cap"></div>
+                            <div class="card-body">
+                                <p class="card-text card__text">Some quick example text to build on the card title
+                                    and make up the bulk of
+                                    the card's contentbulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div>
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__row--col">
+                            <div class="footer__logo">
+                                <img src="images/logo__footer.png" alt="">
+                            </div>
+                            <!-- <ul class="footer__list">
+                                <li><a class="footer__list--page-active" href="javascript:void(0)">Home</a></li>
+                                <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+                                <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+                                <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+                                <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a></li>
+                                <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+                            </ul> -->
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <!-- <li><span class="footer__list--title">Recent Jobs</span></li> -->
+                                <li><a class="footer__list--link" href="javascript:void(0)">Home</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">About us</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Blog</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <!-- <li><span class="footer__list--title">Trainings</span></li> -->
+                                <li><a class="footer__list--link" href="javascript:void(0)">Contact</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Terms and Conditions</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)">Help & FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__row--col">
+                            <ul class="footer__list">
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a></li>
+                                <li><a class="footer__list--link" href="javascript:void(0)"><i class="flaticon-phone-receiver footer__list--icon"></i>+994 55 123 45 67</a></li>
+                                <li>
+                                    <ul class="footer__list">
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-instagram m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-facebook-logo m"></i></a></li>
+                                        <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i class="flaticon-linkedin-logo m"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+    <script src="libs/js/owl.carousel.min.js"></script>
+    <script src="libs/js/jquery.inputmask.bundle.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script src="libs/Croppie/croppie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>

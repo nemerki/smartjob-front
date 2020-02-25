@@ -1,0 +1,111 @@
+.footer{
+  background-color: #043927;
+  padding: 7rem 0 4rem 0;
+  margin-bottom: -2rem;
+
+  &__c{
+    color: $color-gray-light-2;
+    font-size: 1.7rem;
+    margin-top: 2rem;
+  }
+
+  &__logo{
+    margin-bottom: 2rem;
+  }
+  &__row{
+    display: flex;
+    @include respond(phone) {
+      display: block;
+      text-align: center;
+    }
+    @include respond(tab-port) {
+      display: block;
+      text-align: center;
+    }
+    
+    @include respond(phone-land) {
+      display: block;
+      text-align: center;
+      
+    }
+
+    &--col{
+      flex-basis: 100%;
+    }
+  }
+  &__list{
+    padding-left: unset;
+    list-style: none;
+    @include respond(phone) {
+      margin-bottom: 3rem;
+    }
+    @include respond(tab-port) {
+      margin-bottom: 3rem;
+    }
+    
+    @include respond(phone-land) {
+      margin-bottom: 3rem;
+      
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    &--item{
+      display: inline-block;
+      // background-color: $color-white;
+      padding: .2rem .7rem;
+      border-radius: 50%;
+      margin-top: .5rem;
+      &:not(:last-child) {
+        margin-right: 1rem;     
+      }
+    }
+    &--link{
+      font-size: 1.5rem;
+      transition: all .4s;
+      color: $color-white;
+      @include respond(desktop) {
+        &:hover{
+          opacity: .7;
+          color: #fff;
+        }
+        
+      }
+    }
+    &--icon{
+      color:  #fff;
+      margin-right: 1rem;
+    }
+    &--title{
+      color:  #fff;
+      font-size: 1.8rem;
+    }
+    &--page{
+      color:  #fff;
+      font-size: 1.8rem;
+      transition: all .3s;
+      &-active{
+        color:  #fff;
+        font-size: 1.8rem;
+      }
+      &:hover{
+        color:  #fff;
+        opacity: .7;
+      }
+    }
+  }
+}
+
+.m{
+  color:  #fff;
+  &:hover{
+    color: $color-white;
+  }
+
+  &::before{
+    font-size: 2rem;
+    
+    
+  }
+}
+

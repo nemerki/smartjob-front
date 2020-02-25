@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jobs</title>
+
+  <link rel="stylesheet" href="libs/default.css?v1.1">
+  <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main/main.css?v1.93">
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
+
+</head>
+
+<body>
+  <div>
+    <header>
+      <div class="header">
+        <div class="container">
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Login</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                    <input type="password" placeholder="Your password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <button type="" class="modal__login">login</button>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Register</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <input type="text" class="modal__input" name="" value="" placeholder="Your name">
+                    <input type="text" class="modal__input" name="" value="" placeholder="Your surname">
+                    <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                    <input type="password" placeholder="Your password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <input type="password" placeholder="Confirm password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <button type="" class="modal__login">login</button>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+            <ul class="navbar-nav ml-auto nav__box">
+              <li class="nav-item nav__item  ">
+                <a class="nav__link  nav__link--active" href="#">
+                  Vakansiyalar
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  İş axtaranlar
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  Məqalələr
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " data-toggle="modal" data-target="#myModal" href="#">
+                  Daxil ol
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  Bizə qoşul
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#" data-toggle="modal" data-target="#myModal1">
+                  Qeydiyyat
+                </a>
+
+              </li>
+            </ul>
+
+            <div class="d-flex">
+              <button class="navbar-toggler" type="button" id="openHeader">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="nav-item nav__item dropdown ">
+                <a class="nav__link nav__link--red " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                EN
+              </a>
+              <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item langLink" href="#">AZ</a>
+                <a class="dropdown-item langLink" href="#">RU</a>
+                <a class="dropdown-item langLink" href="#">EN</a>
+              </div>
+            </div>
+          </div>
+          <div id="sideMenu" class="nav__side">
+            <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+              class="flaticon-down-arrow float-right"></i></a>
+              <div class="nav__side--dropdownContainer">
+                <a class="nav__side--link" href="#">Premium</a>
+                <a class="nav__side--link" href="#">VIP</a>
+                <a class="nav__side--link" href="#">Regular</a>
+              </div>
+              <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                  <a class="nav__side--link" href="#">Courses</a>
+                  <a class="nav__side--link" href="#">Trainings</a>
+                  <a class="nav__side--link" href="#">Events</a>
+                </div>
+                <hr class="nav__side-hr">
+                <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__icon"></i>Join</a>
+                <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                  class="flaticon-old-fashion-briefcase nav__icon"></i>Employer <i
+                  class="flaticon-down-arrow float-right"></i></a>
+                  <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Join</a>
+                    <a class="nav__side--link" href="#">Sign up</a>
+                  </div>
+                  <a href="javascript:void(0)" class="nav__side--link"><i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                </div>
+
+
+              </nav>
+
+            </div>
+          </div>
+
+        </header>
+
+        <section class="addCv">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8">
+                <h2>Elan yerləşdir</h2>
+                <div class="form-group">
+                  <form>
+                    <h3>əlaqə</h3>
+                    <label>E-mail</label>
+                    <input type="email" name="" value="" placeholder="">
+                    <div class="addCv__number">
+                      <label>telefon</label>
+                      <input type="text" name="" value="" placeholder="Məsələn:(011) 222-33-44">
+                      <input type="text" name="" value="" placeholder="">
+                      <input type="text" name="" value="" placeholder="">
+                    </div>
+
+                    <div class="addCv__select">
+                      <label for="">Kategoriya</label>
+                      <select>
+                        <option>maliyee</option>
+                        <option>programist</option>
+                      </select>                      
+                    </div>
+                    <div class="addCv__select">
+                      <label for="">Vəzifə</label>
+                      <input type="text" name="" value="" placeholder="">                     
+                    </div>
+                    <div class="addCv__select">
+                      <label for="">şəhər</label>
+                      <select>
+                        <option>baku</option>
+                        <option>şəki</option>
+                      </select>                      
+                    </div>
+
+                    <div class="addCv__select">
+                      <h5 class="addCv__salary" for="">Maaş*</h5>
+                      <div class="addCv__maxMin">
+                        <label>
+                          minimum
+                          <select>
+                            <option>23</option>
+                            <option>35</option>
+                          </select>
+
+                        </label>
+                        <label class="ml-auto">
+                          maksimum
+                          <select>
+                            <option>23</option>
+                            <option>35</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="addCv__select">
+                      <h5 class="addCv__salary" for="">Yaş*</h5>
+                      <div class="addCv__maxMin">
+                        <label>
+                          minimum
+                          <select>
+                            <option>23</option>
+                            <option>35</option>
+                          </select>
+
+                        </label>
+                        <label class="ml-auto">
+                          maksimum
+                          <select>
+                            <option>23</option>
+                            <option>35</option>
+                          </select>
+                        </label>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="">Təhsil</label>
+                      <select>
+                        <option>ali</option>
+                        <option>orta</option>
+                      </select>
+                      
+                    </div>
+                    <div>
+                      <label for="">iş təcrübəsi</label>
+                      <select>
+                        <option>1 ildən aşağı</option>
+                        <option>1 ildən 3 ə qədər</option>
+                      </select>
+                    </div>                   
+
+                    <div class="addCv__texarea">
+                      <label>Namizədə tələblər</label>
+                      <textarea name="" rows="10"></textarea>
+                      <label>İş barədə məlumat</label>
+                      <textarea name="" rows="10"></textarea>
+
+                    </div>
+                    <label>Şirkətin adı</label>
+                    <input type="email" name="" value="" placeholder="">
+                    <label>Əlaqədar şəxs</label>
+                    <input type="email" name="" value="" placeholder="">                    
+                    <button type="button" class="addCv__button">
+                      əlavə et
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-4">
+               <h2>Qaydalar</h2>
+               <ul class="addCv__list">
+                 <li>
+                   <p>
+                     Bir vakansiyanın 30 gün müddətinə yerləşdirilməsi pulsuz həyata keçirilir.
+                   </p>
+                 </li>
+                 <li>
+                   <p>
+                     Vakansiya yalnız Azərbaycan daxilində olan işləri əhatə etməlidir.
+                   </p>
+                 </li>
+                 <li>
+                   <p>
+                     Vakansiya haqqında elanın ən qısa müddətdə dərc olunması üçün formanın doldurulmasına dair bütün təlimatlara ciddi riayət olunmalıdır. Səliqəsiz doldurulmuş formalar redaktəyə məruz qalacaq və dərhal dərc olunmayacaq.
+                   </p>
+                 </li>
+                 <li>
+                   <p>
+                     Elanların yalnız baş (BÖYÜK) hərflərlə və ya başqa əlifba ilə (translitlə) yazılması qadağandır. Elan bütünlüklə bir dildə olmalıdır.
+                   </p>                  
+                 </li>
+                 <li>
+                   <p>
+                     Şirkətin adı olan sütunda şirkətin rəsmi, hüquqi adı, həmin müəssisə holdinq tərkibindədirsə, holdinqin adı və şirkətin fəaliyyət istiqaməti (növü) qeyd olunmalıdır.
+                   </p>
+                   <li>
+                     <p>
+                      Əlaqələr yazılan sütunda aktiv şəhər telefonlarının nömrələri və şirkətin korporativ elektron ünvanları qeyd olunmalıdır.
+                    </p>
+                  </li>
+                  <li>
+                   <p>
+                     İstifadəçi 5 və 6-cı bəndlərə riayət etmədikdə, elan ödənişli əsaslarla qəbul edilir.
+                   </p>
+                 </li>
+                 <li>
+                   <p>
+                     Tibb müəssisələrinin elanları və ya tibbi tərkibli, alış-veriş haqqında, o cümlədən saytda onlayn-satışlı elanlar pulludur
+                   </p>
+                 </li>
+                 <li>
+                   <p>
+                    «Əmək haqqı» sütununun doldurulması mütləqdir, məbləğ AZN-lə göstərilməlidir. Əgər əmək haqqı 500 AZN-ə qədərdirsə, əmək haqqı diapazonu 200 AZN-i; 1000 AZN-ə qədərdirsə 300 AZN-i; 2000 AZN-ə qədərdirsə, 500 AZN-i aşmamalıdır.
+                  </p>
+                </li>
+                <li>
+                 <p>
+                   Dərc olunmuş elanda əlaqə nömrələrinin, vakansiyanın adının dəyişdirilməsi qadağandır.
+                 </p>
+               </li>
+               <li>
+                 <p>
+                   «Namizədə olan tələblər» mümkün qədər ətraflı yazılmalıdır.
+                 </p>
+               </li>
+               <li>
+                 <p>
+                   «Mövqenin (vəzifənin) təsviri» də həmçinin iş qrafiki, vəzifə öhdəlikləri və işin şərtləri qeyd olunmaqla, ətraflı yazılmalıdır.
+                 </p>
+               </li>
+               <li>
+                 <p>
+                   Mövqe (vəzifə) seçilmiş kateqoriyaya uyğun olmalı, əgər elə kateqoriya yoxdursa, onda «Müxtəlif» adlanan alt-kateqoriyada yerləşdirilməlidir.
+                 </p>
+               </li>
+               <li>
+                 <p>
+                  Aşağıdakı kimi elanlar dərhal ləğv olunacaq:
+                  <ul>
+                    <li>
+                      <p>
+                        ədəbsiz, təhqiredici sözlər və ifadələr olan;
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        şəbəkə marketinqi və ya qadağan olunmuş, şübhəli fəaliyyət növləri ilə məşğul olan şirkətlərdə iştirak təklifləri olan.
+                      </p>
+                    </li>
+                  </ul>
+                </p>
+              </li>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__row--col">
+            <ul class="footer__list">
+              <li><a class="footer__list--page" href="javascript:void(0)">Home</a></li>
+              <li><a class="footer__list--page" href="javascript:void(0)">About us</a></li>
+              <li><a class="footer__list--page" href="javascript:void(0)">Blog </a></li>
+              <li><a class="footer__list--page" href="javascript:void(0)">Contact</a></li>
+              <li><a class="footer__list--page" href="javascript:void(0)">Terms and Conditions</a>
+              </li>
+              <li><a class="footer__list--page" href="javascript:void(0)">Help & FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer__row--col">
+            <ul class="footer__list">
+              <li><span class="footer__list--title">Recent Jobs</span></li>
+              <li><a class="footer__list--link" href="javascript:void(0)">Premium jobs</a></li>
+              <li><a class="footer__list--link" href="javascript:void(0)">VIP jobs </a></li>
+              <li><a class="footer__list--link" href="javascript:void(0)">Regular jobs</a></li>
+            </ul>
+          </div>
+          <div class="footer__row--col">
+            <ul class="footer__list">
+              <li><span class="footer__list--title">Trainings</span></li>
+              <li><a class="footer__list--link" href="javascript:void(0)">Free trainings</a></li>
+              <li><a class="footer__list--link" href="javascript:void(0)">Discounted trainings</a>
+              </li>
+              <li><a class="footer__list--link" href="javascript:void(0)">Tam qiymt</a></li>
+            </ul>
+          </div>
+          <div class="footer__row--col">
+            <ul class="footer__list">
+              <li><a class="footer__list--link" href="javascript:void(0)"><i
+                class="flaticon-close-envelope footer__list--icon"></i>info@jobustan.az</a>
+              </li>
+              <li><a class="footer__list--link" href="javascript:void(0)"><i
+                class="flaticon-call-answer footer__list--icon"></i>+994 55 123 45 67</a>
+              </li>
+              <li>
+                <ul class="footer__list">
+                  <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                    class="flaticon-instagram m"></i></a></li>
+                    <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                      class="flaticon-facebook-logo m"></i></a></li>
+                      <li class="footer__list--item"><a class="a" href="javascript:void(0)"><i
+                        class="flaticon-linkedin-logo m"></i></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
+      <script src="libs/js/owl.carousel.min.js"></script>
+      <script src="libs/js/jquery.inputmask.bundle.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+      <script src="libs/air-datepicker/dist/js/datepicker.min.js"></script>
+      <script src="libs/air-datepicker/dist/js/i18n/datepicker.en.js"></script>
+      <script src="libs/Croppie/croppie.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.js"></script>
+      <script src="js/all.js"></script>
+
+      <script>
+        $(document).ready(function () {
+          $("#range").ionRangeSlider({
+            type: "double",
+            grid: true,
+            min: 0,
+            max: 10000,
+            from: 400,
+            to: 800,
+            step: 50,
+            onFinish: function (data) {
+
+              $('input[type=hidden].range-min-value').val(data.from);
+              $('input[type=hidden].range-max-value').val(data.to);
+            },
+
+          });
+        });
+      </script>
+    </body>
+
+    </html>

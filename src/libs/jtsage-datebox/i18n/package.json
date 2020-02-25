@@ -1,0 +1,22 @@
+{
+  "name": "jtsage-datebox-i18n",
+  "title": "JTSage DateBox (Internationalization)",
+  "description": "Plugin to provide a framework agnostic Date and Time Picker (i18n)",
+  "version": "5.1.5",
+  "supports": {
+    "bootstrap": "3.3.7"
+  },
+  "homepage": "http://dev.jtsage.com/DateBox/",
+  "author": {
+    "name": "JTSage and other contributors",
+    "url": "https://github.com/jtsage/jquery-mobile-datebox/blob/master/AUTHORS.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtsage/jquery-mobile-datebox.git"
+  },
+  "bugs": "https://github.com/jtsage/jquery-mobile-datebox/issues",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

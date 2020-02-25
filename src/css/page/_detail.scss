@@ -1,0 +1,30 @@
+.detail {
+  padding: 5rem 0;
+  background-color: #e4e4e4;
+
+  &__title {
+    background-color: #0184fd;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+  }
+  &__title2{
+    margin-bottom: 2rem !important;
+    color: #0184fd !important;
+    text-align: center !important;
+  }
+
+  & p{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+  }
+
+  & h3{
+    text-transform: uppercase;
+    margin:3rem 0;
+    color: #0184fd;
+  }
+}

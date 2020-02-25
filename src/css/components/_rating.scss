@@ -1,0 +1,28 @@
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    color: $color-primary-dark;
+    font-size: 2.5rem;
+    &__star{
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+        cursor: pointer;
+        &:hover ~ .rating__star:before{
+            content: "\2605";
+            position: absolute;
+        }
+        &:hover:before{
+            content: "\2605";
+            position: absolute;
+           
+        }
+    }
+    &__count{
+        font-size: 2rem;
+        color: $color-gray;
+        margin-left: 1rem;
+        direction: ltr;
+        unicode-bidi: bidi-override;
+    }
+  }

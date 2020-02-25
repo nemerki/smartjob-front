@@ -1,0 +1,23 @@
+{
+  "name": "jtsage-datebox-bootstrap3",
+  "title": "JTSage DateBox (Bootstrap v3)",
+  "description": "Plugin to provide a framework agnostic Date and Time Picker (Bootstrap v3 Version)",
+  "version": "5.1.5",
+  "supports": {
+    "bootstrap": "3.4.1"
+  },
+  "homepage": "http://datebox.jtsage.dev/",
+  "author": {
+    "name": "JTSage and other contributors",
+    "url": "https://github.com/jtsage/jtsage-datebox/blob/master/AUTHORS.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtsage/jtsage-datebox.git"
+  },
+  "bugs": "https://github.com/jtsage/jtsage-datebox/issues",
+  "license": "MIT",
+  "main": "jtsage-datebox.js",
+  "devDependencies": {},
+  "dependencies": {}
+}

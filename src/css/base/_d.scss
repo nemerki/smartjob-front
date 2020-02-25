@@ -1,0 +1,58 @@
+
+
+
+
+
+/* 
+section content  card*/
+.card-btn
+{
+  width: 110px;
+  background-color: #fff;
+  font-size: 17px;
+  color: #000;
+  border-radius: 0;
+}
+
+
+.image-card img
+{
+  width: 76px;
+  padding-bottom: 50px;
+  
+}
+/* 
+footer */
+
+/* looking job */
+.fcard-header
+{
+  max-height: 250px;
+}
+.circle
+{
+  background-color: #fff;
+  padding: 80px;
+  display: inline-block;
+  position: relative;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+ 
+}
+
+.circle img
+{
+  position: absolute;
+  top: 12%;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+  margin-bottom: 1em;
+}
+

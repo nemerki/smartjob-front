@@ -1,0 +1,20 @@
+{
+  "name": "jtsage-datebox-noframe",
+  "title": "JTSage DateBox (No Framework)",
+  "description": "Plugin to provide a framework agnostic Date and Time Picker (Frameworkless Version)",
+  "version": "5.1.5",
+  "homepage": "http://datebox.jtsage.dev/",
+  "author": {
+    "name": "JTSage and other contributors",
+    "url": "https://github.com/jtsage/jtsage-datebox/blob/master/AUTHORS.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jtsage/jtsage-datebox.git"
+  },
+  "bugs": "https://github.com/jtsage/jtsage-datebox/issues",
+  "license": "MIT",
+  "main": "jtsage-datebox.js",
+  "devDependencies": {},
+  "dependencies": {}
+}

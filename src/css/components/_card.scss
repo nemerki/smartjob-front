@@ -1,0 +1,548 @@
+.vacance-Card{
+    position: relative;
+    background-color: $color-primary;
+    height: 29rem;
+    box-shadow: 0px 10px 8.7px 1.3px rgba(166, 166, 166, 0.15);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-bottom: 1.5rem;
+    border-radius: 1rem;
+    &:hover{
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        @include respond(phone) {
+            transform: unset;
+        }
+    }
+    &__addBtnIcon::before{
+        font-size: 4rem!important;
+    }
+    &__all{
+        @include absCenter;
+        width: 100%;
+        &--link{
+            color: $color-gray-dark;
+            font-size: 2rem;
+            &:hover{
+                color: $color-gray-dark;
+            }
+        }
+    }
+    &__fav{
+        @include absCenter;
+        &--link{
+            color: $color-white;
+            font-size: 2.5rem;
+
+        }
+    }
+    &__notification{
+        font-size: 2rem;
+        color: $color-gray;
+        padding:1rem;
+
+    }
+    &--darkRed{
+        background-color:$color-primary-dark;
+        &-1{
+            height: 22.3rem;
+            background-color:$color-primary-dark;
+        }
+
+    }
+    &__white{
+        background-color: #fff;
+        height: 22.3rem;
+        &:hover{
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+    }
+    &__Text{
+        text-align: center;
+        color: #fff;
+        padding-top: 2.5rem;
+        &--symple{
+            padding-top: 2.5rem
+        }
+    }
+    &__CompanyName{
+        font-size: 1.5rem;
+        color: $color-white;
+        margin-bottom: 1rem;
+        @include respond(tab-port) {
+            margin-bottom: .5rem;
+        }
+        &__lightGray{
+            color:$color-gray-light-7;
+            font-size: 1.6rem;
+        }
+
+    }
+    &__VacanceName{
+        font-size: 1.6rem;
+        padding: 0 1.5rem;
+        padding-bottom: 1rem;
+        color: $color-white;
+        p{
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            padding: 0 1.5rem 0 3.5rem;
+            height: 5.4rem;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            // text-transform: lowercase;
+            // &:first-letter {
+            //     text-transform: uppercase;
+            //   }
+        }
+        @include respond(tab-port) {
+            padding-bottom: 0;
+        }
+        &__darkGray{
+            color: $color-gray-dark;
+            font-size: 1.6rem;
+            padding: 1rem 4.5rem;
+            p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 1rem;
+                text-transform: lowercase;
+                &:first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    &__Salary{
+        font-size: 1.64rem;
+        padding: 1rem 1rem 0 1rem;
+        color:$color-white;
+        display: inline-block;
+        @include respond(tab-port) {
+            padding-top: 0;
+        }
+        &__darkRed{
+            color:$color-primary-dark;
+            display: inline-block;
+            font-size: 1.64rem;
+            padding: 1rem 1rem 0 1rem;
+        }
+    }
+    &__Button{
+        position: absolute;
+        left: 50%;
+        bottom: 3rem;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    &__More{
+        padding-top: 1.5rem;
+        font-size: 1.36rem;
+        color: #fff;
+        cursor: pointer;
+        &__gray{
+            color: #878787;
+            cursor: pointer;
+
+        }
+    }
+    &__premium{
+        position: absolute;
+        top:0;
+        left: 1.5rem;
+        color: $color-primary;
+        &--icon::before{
+            font-size: 3rem!important;
+        }
+    }
+    &__vip{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+        color: $color-white;
+        &--icon::before{
+            font-size: 4.5rem!important;
+            @include respond(tab-port) {
+                font-size: 3.5rem!important;
+            }
+        }
+    }
+    &__heart{
+        position: absolute;
+        top: .5rem;
+        right: 1.5rem;
+        font-size: 2.3rem;
+        cursor: pointer;
+
+        &--white{color:$color-white;}
+        &--red{
+            color: $color-primary;
+
+        }
+        &--icon::before{
+            font-size: 2.3rem!important;
+        }
+    }
+
+}
+
+.jobs-card{
+    position: relative;
+    background-color: $color-white;
+    // border: 1px solid $color-gray-light-1;
+    transition: all .5s;
+    padding:2rem 1rem 0 5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(20,38,246,.2);
+    border-radius: 1rem;
+    box-shadow: 0px 10px 8.7px 1.3px rgba(166, 166, 166, 0.15);
+
+    &:hover{
+        transform: translateY(-5px);
+        box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        background-color: rgba(1,132,253,.05);
+    }
+    @include respond(phone) {
+        padding:2rem ;
+    }
+    @include respond(phone-land) {
+        padding:2rem ;
+    }
+    @include respond(desktop) {
+        // &:hover .loader-box{
+        //     display: block;
+        //     background-color: $color-gray-light-3;
+        //     transition: all 3s;
+        // }
+        // &:hover &__describtion{
+        //     display: block;
+        // }
+    }
+
+    &--2{
+        background-color: #10C8D2;
+        transition: all .5s;
+
+        &:hover{
+            transform: translateY(-5px);
+            box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+            background-color: rgba(1,132,253,.4);
+        }
+
+        & p,a{
+            color: #fff !important;
+        }
+
+        & .jobs-card__location--icon, & .jobs-card__date--icon{
+            color: #fff ;
+
+            &:before{
+                color: #fff;
+            }
+        }
+
+        & .jobs-card__location,& .jobs-card__date{
+            color: #fff;
+
+
+        }
+    }
+
+
+    &--darkRed{
+        background-color:#0184FD ;
+
+    }
+    &__white{
+        background-color: $color-white;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+    }
+
+    &__describtion{
+        display: none;
+        position:absolute;
+        right:18rem;
+        bottom:0;
+        left:5rem;
+        top:4rem;
+        padding:3rem;
+        overflow-y: scroll;
+        height: 20rem;
+        z-index: 11;
+        background-color: $color-white;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        &-heading{
+            color: $color-primary-dark;
+        }
+        &-text{
+            color: $color-gray;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+        ul{
+           li{
+               color:$color-primary-dark;
+               font-size: 1.3rem;
+           }
+       }
+       &-list{
+           color: $color-gray-dark;
+       }
+
+   }
+   &__text{
+    text-align: left;
+    color: $color-gray-dark;
+
+
+}
+&__companyName{
+    font-size: 1.6rem;
+    display: inline-block;
+    padding-bottom: 1rem;
+    color: #0184FD ;
+    @include respond(phone) {
+        display: block;
+        padding-right: 3rem;
+        font-size: 1.2rem;
+    }
+    @include respond(phone-land) {
+        display: block;
+        padding-right: 3rem;
+        font-size: 1.2rem;
+    }
+    &__lightGray{
+        color: $color-gray-dark;
+        font-size: 1.36rem;
+    }
+
+}
+&__jobsName{
+    font-size: 1.5rem;
+    padding-bottom: .5rem;
+    display: inline-block;
+    cursor: pointer;
+    color: #0184FD ;
+    p{
+            // white-space: nowrap;
+            // overflow: hidden;
+            // -o-text-overflow: ellipsis;
+            // text-overflow: ellipsis;
+            // padding: 0 1rem;
+            // text-transform: lowercase;
+            // &:first-letter {
+            //     text-transform: uppercase;
+            //   }
+        }
+        @include respond(phone) {
+            display: block;
+            padding-right: 3rem;
+            font-size: 1.2rem;
+        }
+        @include respond(phone-land) {
+            display: block;
+            padding-right: 3rem;
+            font-size: 1.2rem;
+        }
+
+        a{
+            color: $color-gray-dark;
+        }
+        &__darkGray{
+            color: $color-gray-dark;
+            font-size: 1.64rem;
+            padding: 1rem;
+        }
+    }
+    &__salary{
+        font-size: 1.64rem;
+        display: inline-block;
+        float: right;
+        font-weight: bold;
+        background-color: unset;
+        p{
+           span:not(:last-child){
+            margin-right: 4px;
+        }
+    }
+    @include respond(phone) {
+        display: block;
+        float: unset;
+        font-size: 1.2rem;
+    }
+    @include respond(phone-land) {
+        display: block;
+        float: unset;
+        font-size: 1.2rem;
+    }
+    &--darkRed{
+        color:#0184FD;
+
+    }
+}
+&__date{
+    display: inline-block;
+    color: #0184FD ;
+    margin-right: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem 0 2rem 0;
+    &--icon::before{
+        color: #0184FD ;
+        margin-left: 0!important;
+        margin-right: .5rem;
+        font-size: 1.6rem!important;
+    }
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+    @include respond(phone-land) {
+        font-size: 1.2rem;
+    }
+}
+&__location{
+    color: #0184FD ;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding:1rem 0 2rem 0;
+    &--icon::before{
+        color: #0184FD ;
+        margin-left: 0!important;
+        margin-right: .5rem;
+        font-size: 1.6rem!important;
+    }
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+    @include respond(phone-land) {
+        font-size: 1.2rem;
+    }
+}
+&__btn{
+        // margin-top: 2rem;
+        display: inline-block;
+        float: right;
+        font-size: 1.5rem;
+        @include respond(phone) {
+            display: block;
+            float: unset;
+            width: 100%;
+        }
+        @include respond(phone-land) {
+            display: block;
+            float: unset;
+            width: 100%;
+        }
+
+
+    }
+    &__more{
+        padding-top: 1.5rem;
+        font-size: 1.36rem;
+        color: $color-white;
+        cursor: pointer;
+        &__gray{
+            color: #878787;
+            cursor: pointer;
+        }
+    }
+    &__premium{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: #fff;
+        &--icon::before{
+            margin-left: 0!important;
+            font-size: 3rem!important;
+        }
+        @include respond(phone) {
+            right: 1rem;
+            left: unset;
+        }
+        @include respond(phone-land) {
+            right: 1rem;
+            left: unset;
+        }
+    }
+    &__heart{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        cursor: pointer;
+        &--white{color:$color-white;}
+        &--primary{
+            color: #0184FD ;
+        }
+        &--icon:hover{
+            color: #0184FD ;
+        }
+        @include respond(phone) {
+            top: 14rem;
+        }
+        @include respond(phone-land) {
+            top: 14rem;
+        }
+
+
+    }
+
+
+}
+
+
+.card__criterias{
+
+    padding: 0;
+
+    &--body{
+        max-height: 200px;
+        overflow-y: scroll;
+        border-bottom: 1px solid $color-gray-light-1;
+        padding: 0;
+        margin-top: 1rem;
+        &-salary{
+            padding: 2rem 1rem;
+        }
+    }
+}
+.accord{
+
+    margin-bottom: 1rem;
+    border: unset;
+    box-shadow: 0px 10px 8.7px 1.3px rgba(166, 166, 166, 0.15);
+    border-radius: 1rem!important;
+
+    &__header{
+        padding: 0;
+        border-top-left-radius: 1rem!important;
+        border-top-right-radius: 1rem!important;
+        border: unset;
+    }
+
+
+    &__body{
+        max-height: 200px;
+        overflow-y: scroll;
+        border-bottom: 1px solid $color-gray-light-1;
+        padding: 0;
+        margin-top: 1rem;
+        &-salary{
+            padding: 2rem 1.5rem;
+        }
+    }
+}
+
+.card__text{
+    font-size: 2.5rem;
+    color: #9c9c9c;
+    text-align: center;
+}
+
+.panel-heading.active {
+    background-color: #ffd051;
+}
+

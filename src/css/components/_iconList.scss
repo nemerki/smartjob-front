@@ -1,0 +1,13 @@
+.iconList{
+   
+    padding-left: unset;
+    list-style: none;
+    &__item{
+        display: inline-block;
+        margin-right: 1rem;
+        &--icon::before{
+            color: $color-primary-dark;
+            font-size: 2rem;
+        }
+    }
+}

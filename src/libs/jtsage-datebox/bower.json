@@ -1,0 +1,22 @@
+{
+  "name": "jtsage-datebox",
+  "description": "Plugin to provide a framework agnostic Date and Time Picker (Bootstrap 3 & 4, jQueryMobile & jQueryUI)",
+  "authors": [
+    "J.T.Sage <jtsage+datebox@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "date",
+    "time",
+    "picker",
+    "ui"
+  ],
+  "homepage": "https://github.com/jtsage/datebox-builds",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

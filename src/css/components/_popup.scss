@@ -1,0 +1,480 @@
+.popup {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba($color-black, $alpha: .8);
+    display: none;
+    // transition: all .3s;
+    color: $color-gray;
+
+
+    &__coverLetteHint{
+        text-align: left;
+        font-size: 1.2rem;
+        padding: 1.5rem 1rem;
+        background-color: $color-gray-light-1;
+        margin-bottom: 2rem;
+        border-radius: .5rem;
+
+        &--title{
+            color: $color-primary-dark;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+    }
+    &__text{
+        font-size: 1.3rem;
+    }
+    &__list{
+        list-style: none;
+        font-size: 1.3rem;
+        padding-left: 0;
+        max-width: 25rem;
+        margin: 2rem auto;
+        text-align: left;
+    }
+
+  &__dropdown{
+      &--link{
+        padding: .5rem 3rem;
+        text-decoration: none;
+        font-size: 2rem;
+        color: $color-primary-dark;
+        border: 1px solid;
+        display: block;
+        transition: 0.3s;
+        margin:1rem 16rem;
+        text-align: left;
+        border-radius: 1rem;
+        &:hover{
+            color: $color-primary-dark;
+        }
+      }
+      &--container{
+        display: none;
+        background-color: #fff;
+        padding-left: 1rem;
+        box-shadow: 0px 8px 10px 0px rgba(165, 165, 165, 0.13);
+        margin:0 16rem;
+        text-align: left;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        font-weight: 200; 
+      }
+  }
+    &__close{
+        &:link,&:visited{
+            color: $color-white;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+            
+        }
+        &--primaryDark{
+            color: $color-primary-dark!important;
+        }
+        &--black{
+            color: $color-black;
+            position: absolute;
+            top: 0;
+            right: 1rem;
+            font-size: 3rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: all .3s;
+        }
+    }
+    &__addResume{
+        @include absCenter;
+        width: 40%;
+        
+        background-color: $color-white;
+        box-shadow: 0 2rem 4rem rgba($color-black, $alpha: .2);
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        
+        @include respond(phone) {
+            width: 80%;
+          }
+        
+        &--title{
+            color: $color-gray;
+            margin-bottom: 2rem;
+            font-weight: 100;
+        }
+        &--header{
+            // background-image: linear-gradient(to right  ,$color-primary-dark ,$color-primary); 
+            padding: 1.5rem;
+            // margin-bottom: 2rem;
+        }
+        &--content{
+            text-align: center;
+            padding: 2rem;
+            padding-top: 0;
+        }
+    }
+  
+}
+
+// #cvName{
+//     color:$color-white;
+    
+// }
+// #cvName::placeholder {
+//     color:$color-white;
+//   }
+
+
+  /////////////////////
+///therty Popup
+
+
+
+.ThertyPopup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    background-color: rgba($color-black, .8);
+    display: none;
+    &__marg{
+        margin: 2rem 0;
+        @include respond(phone) {
+            margin: 1.5rem 0;
+          }
+          @include respond(phone-land) {
+            margin: 1.5rem 0;
+          }
+    }
+    &__content {
+        width: 35%;
+        border-radius: 10px;
+        padding: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $color-white;
+        transform: translate(-50%, -50%);
+        @include respond(phone) {
+            width: 90%;
+            padding: 1rem;
+          }
+          @include respond(phone-land) {
+            width: 80%;
+            padding: 1rem;
+          }
+          @include respond(tab-port) {
+            width: 60%;
+            padding: 2rem;
+          }
+
+        &--header {
+            display: flex;
+            justify-content: space-between;
+
+            &-icon {
+                font-size: 2rem;
+                color: $color-gray;
+                cursor: pointer;
+            }
+
+
+            &-title {
+                text-align: left;
+                color: $color-gray-dark;
+                font-size: 2rem;
+                @include respond(phone) {
+                    font-size: 1.6rem;
+                  }
+                  @include respond(tab-port) {
+                    font-size: 1.8rem;
+                  }
+            }
+        }
+        &--btn {
+            display: flex;
+            justify-content: space-evenly;
+
+            &-link,
+            &-link:link,
+            &-link:visited {
+                text-decoration: none;
+                background-color: $color-primary-dark;
+                color: $color-white;
+                text-align: center;
+                padding: .5rem 3rem;
+                font-size: 1.5rem;
+                border-radius: 5px;
+                transition: all .5s;
+            }
+
+            &-link-efect,
+            &-link-efect:link,
+            &-link-efect:visited {
+                background-color: $color-white;
+                border: 1px solid $color-gray;
+                color: $color-gray;
+
+                &:hover {
+                    background-color: $color-primary-dark;
+                    border-color: transparent;
+                    color: $color-white;
+                }
+            }
+        }
+
+      
+
+    }
+}
+
+
+/////////////////////
+///Second Popup 
+.SecondPopup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 99999;
+    background-color: rgba($color-black, .8);
+    display: none;
+
+    &__content {
+        width: 35%;
+        border-radius: 10px;
+        padding: 2rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $color-gray-light-3;
+        transform: translate(-50%, -50%);
+        @include respond(phone) {
+            width: 90%;
+            padding: 1rem;
+          }
+          @include respond(phone-land) {
+            width: 80%;
+            padding: 1rem;
+          }
+          @include respond(tab-port) {
+            width: 60%;
+            padding: 2rem;
+          }
+
+        &--header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &-icon {
+                font-size: 2rem;
+                color: $color-gray;
+                cursor: pointer;
+            }
+
+
+            &-title {
+                text-align: left;
+                color: $color-gray-dark;
+                font-size: 2rem;
+                @include respond(phone) {
+                    font-size: 1.6rem;
+                  }
+                  @include respond(tab-port) {
+                    font-size: 1.8rem;
+                  }
+            }
+        }
+
+
+
+        &--subtitle {
+            text-align: center;
+            font-size: 2rem;
+            color: $color-primary-dark;
+            padding: 1rem;
+            @include respond(phone) {
+                font-size: 1.6rem;
+              }
+              @include respond(tab-port) {
+                font-size: 1.8rem;
+              }
+        }
+
+        &--text {
+            text-align: center;
+            padding: .5rem 2rem;
+            font-size: 1.4rem;
+            color: $color-black;
+            @include respond(phone) {
+                font-size: 1.3rem;
+                margin-bottom: 1rem;
+              }
+              @include respond(tab-port) {
+                font-size: 1.6rem;
+              }
+        }
+
+
+        &--btn {
+            display: flex;
+            justify-content: space-evenly;
+
+            &-link,
+            &-link:link,
+            &-link:visited {
+                text-decoration: none;
+                background-color: $color-primary-dark;
+                color: $color-white;
+                text-align: center;
+                width: 30%;
+                padding: 1rem;
+                font-size: 1.5rem;
+                border-radius: 5px;
+                transition: all .5s;
+                @include respond(phone) {
+                    font-size: 1.3rem;
+                    line-height: normal;
+                    padding: .7rem 1rem;
+                  }
+                  @include respond(tab-port) {
+                    font-size: 1.5rem;
+                    line-height: normal;
+                    padding:  1rem;
+                  }
+            }
+
+            &-link-efect,
+            &-link-efect:link,
+            &-link-efect:visited {
+                background-color: $color-white;
+                border: 1px solid $color-gray;
+                color: $color-gray;
+
+                &:hover {
+                    background-color: $color-primary-dark;
+                    border-color: transparent;
+                    color: $color-white;
+                }
+            }
+        }
+
+
+
+    }
+}
+
+.popupCheck__link,
+.popupCheck__link:link,
+.popupCheck__link:visited {
+    color: $color-gray;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.popup__link,
+.popup__link:link,
+.popup__link:visited {
+    color: $color-gray;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+}
+
+
+.popup__link-2,
+.popup__link-2:link,
+.popup__link-2:visited {
+    color: $color-gray;
+    text-decoration: none;
+    font-size: 1.4rem;
+
+}
+
+
+
+
+
+.Terms {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: none;
+
+    &__content {
+        width: 25%;
+        border-radius: 10px;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: $color-gray-light-1;
+        transform: translate(-50%, -50%);
+
+        &--title {
+            text-align: center;
+            color: $color-gray-dark;
+            text-decoration: underline;
+            padding: 1rem 0;
+        }
+
+        &--text {
+            text-align: justify;
+            padding: 0 1.5rem;
+            color: $color-gray-dark;
+            margin-bottom:1rem; 
+            max-height: 45rem;
+            overflow: scroll;
+            font-size: 1.2rem;
+        }
+
+
+
+        &--link,
+        &--link:link,
+        &--link:visited {
+            text-decoration: none;
+            background-color: $color-primary-dark;
+            color: $color-white;
+            text-align: center;
+            width: 49%;
+            padding: 1rem;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+
+        &--link-close {
+            float: left;
+            border-bottom-left-radius: 5px;
+
+        }
+
+        &--link-Accept {
+            float: right;
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
+
+.Terms__span {
+    border-bottom: 1px solid $color-gray;
+}
+
+
+
+ 
