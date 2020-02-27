@@ -1,22 +1,178 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jobs</title>
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
-    <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="libs/default.css?v1.1">
+  <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="libs/components-font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="css/main/main.css?v1.93">
+  <!--Plugin CSS file with desired skin-->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/css/ion.rangeSlider.min.css" />
 
-    <link rel="stylesheet" type="text/css" href="libs/normalize.css/normalize.css">
-
-    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main/main.min.css">
 </head>
+
 <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+
+<header>
+      <div class="header">
+        <div class="container">
+          <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Login</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                    <input type="password" placeholder="Your password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <button type="" class="modal__login">login</button>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="myModal1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Register</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                  <form>
+                    <input type="text" class="modal__input" name="" value="" placeholder="Your name">
+                    <input type="text" class="modal__input" name="" value="" placeholder="Your surname">
+                    <input type="email" class="modal__input" name="" placeholder="Your e-mail" value="" placeholder="">
+                    <input type="password" placeholder="Your password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <input type="password" placeholder="Confirm password" class="modal__input" name="" value=""
+                    placeholder="">
+                    <button type="" class="modal__login">login</button>
+                  </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="modal__button" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#"><img src="images/job-logo.png" alt=""></a>
+
+
+            <ul class="navbar-nav ml-auto nav__box">
+              <li class="nav-item nav__item  ">
+                <a class="nav__link  nav__link--active" href="#">
+                  Vakansiyalar
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  İş axtaranlar
+                </a>
+
+              </li>
+              <!-- <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  Məqalələr
+                </a>
+
+              </li> -->
+              <li class="nav-item nav__item ">
+                <a class="nav__link " data-toggle="modal" data-target="#myModal" href="#">
+                  Daxil ol
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#">
+                  Bizə qoşul
+                </a>
+
+              </li>
+              <li class="nav-item nav__item ">
+                <a class="nav__link " href="#" data-toggle="modal" data-target="#myModal1">
+                  Qeydiyyat
+                </a>
+
+              </li>
+            </ul>
+
+            <div class="d-flex">
+              <button class="navbar-toggler" type="button" id="openHeader">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="nav-item nav__item dropdown ">
+                <a class="nav__link nav__link--red " href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                EN
+              </a>
+              <div class="dropdown-menu nav__dropdownMenu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item langLink" href="#">AZ</a>
+                <a class="dropdown-item langLink" href="#">RU</a>
+                <a class="dropdown-item langLink" href="#">EN</a>
+              </div>
+            </div>
+          </div>
+          <div id="sideMenu" class="nav__side">
+            <a href="javascript:void(0)" class="nav__side--closeBtn" id="closeHeader">&times;</a>
+            <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Jobs <i
+              class="flaticon-down-arrow float-right"></i></a>
+              <div class="nav__side--dropdownContainer">
+                <a class="nav__side--link" href="#">Premium</a>
+                <a class="nav__side--link" href="#">VIP</a>
+                <a class="nav__side--link" href="#">Regular</a>
+              </div>
+              <a href="javascript:void(0)" class="nav__side--link dropdown-btn">Career <i
+                class="flaticon-down-arrow float-right"></i></a>
+                <div class="nav__side--dropdownContainer">
+                  <a class="nav__side--link" href="#">Courses</a>
+                  <a class="nav__side--link" href="#">Trainings</a>
+                  <a class="nav__side--link" href="#">Events</a>
+                </div>
+                <hr class="nav__side-hr">
+                <a href="#" class="nav__side--link"><i class="flaticon-man-user nav__icon"></i>Join</a>
+                <a href="javascript:void(0)" class=" nav__side--link dropdown-btn"> <i
+                  class="flaticon-old-fashion-briefcase nav__icon"></i>Employer <i
+                  class="flaticon-down-arrow float-right"></i></a>
+                  <div class="nav__side--dropdownContainer">
+                    <a class="nav__side--link" href="#">Join</a>
+                    <a class="nav__side--link" href="#">Sign up</a>
+                  </div>
+                  <a href="javascript:void(0)" class="nav__side--link"><i class="flaticon-plus nav__icon"></i>Post a Job</a>
+                </div>
+
+
+              </nav>
+
+            </div>
+          </div>
+
+        </header>

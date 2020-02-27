@@ -78,67 +78,67 @@ ORDER: Base + typography > general layout + grid > page layout > components
     }
 }
 
-// @mixin xs {
-//     @media (max-width: #{$xs-max-width}) {
-//         @content;
-//     }
-// }
-// @mixin s {
-//     @media (max-width: #{$s-max-width}) {
-//         @content;
-//     }
-// }
-// @mixin s-md {
-//     @media(min-width: #{$s-max-width}) and (max-width: #{$md-max-width}){
-//         @content;
-//     }
-// }
-// @mixin md {
-//     @media (max-width: #{$md-max-width}) {
-//         @content;
-//     }
-// }
-// @mixin lg {
-//     @media (max-width: #{$lg-max-width}) {
-//         @content;
-//     }
-// }
-// @mixin respondmin($breakpoint){
-// 	@if $breakpoint == sm {
-// 		@media (min-width: 576px) {@content};
-// 	}
+@mixin xs {
+    @media (max-width: #{$xs-max-width}) {
+        @content;
+    }
+}
+@mixin s {
+    @media (max-width: #{$s-max-width}) {
+        @content;
+    }
+}
+@mixin s-md {
+    @media(min-width: #{$s-max-width}) and (max-width: #{$md-max-width}){
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: #{$md-max-width}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (max-width: #{$lg-max-width}) {
+        @content;
+    }
+}
+@mixin respondmin($breakpoint){
+	@if $breakpoint == sm {
+		@media (min-width: 576px) {@content};
+	}
 
-// 	@if $breakpoint == md {
-// 		@media (min-width: 768px) {@content};
-// 	}
+	@if $breakpoint == md {
+		@media (min-width: 768px) {@content};
+	}
 
-// 	@if $breakpoint == lg {
-// 		@media (min-width: 992px) {@content};
-// 	}
+	@if $breakpoint == lg {
+		@media (min-width: 992px) {@content};
+	}
 
-// 	@if $breakpoint == xl {
-// 		@media (min-width: 1200px) {@content};
-// 	}
+	@if $breakpoint == xl {
+		@media (min-width: 1200px) {@content};
+	}
 
 	
-// }
-// @mixin respondmax($breakpoint){
-// 	@if $breakpoint == sm {
-// 		@media (max-width: 575px) {@content};
-// 	}
+}
+@mixin respondmax($breakpoint){
+	@if $breakpoint == sm {
+		@media (max-width: 575px) {@content};
+	}
 
-// 	@if $breakpoint == md {
-// 		@media (max-width: 767px) {@content};
-// 	}
+	@if $breakpoint == md {
+		@media (max-width: 767px) {@content};
+	}
 
-// 	@if $breakpoint == lg {
-// 		@media (max-width: 991px) {@content};
-// 	}
+	@if $breakpoint == lg {
+		@media (max-width: 991px) {@content};
+	}
 
-// 	@if $breakpoint == xl {
-// 		@media (max-width: 1199px) {@content};
-// 	}
-// }
+	@if $breakpoint == xl {
+		@media (max-width: 1199px) {@content};
+	}
+}
 
 
 

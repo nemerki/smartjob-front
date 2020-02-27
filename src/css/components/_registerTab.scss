@@ -1,0 +1,107 @@
+.registerTab{
+	
+    height: 100%;
+    background-color: #fff;
+    border-radius: 24px;
+    margin: 40px 0;
+    padding: 21px;
+
+	
+	&__btnContainer{
+		display:flex;
+		height: 100%;
+
+	}
+
+
+	&__btn{
+		width:50%;
+		cursor: pointer;
+		background-color:$colorPrimary;
+		outline: 0 !important;
+		border-radius: 5px;
+		color: $color-white;
+	    padding: 10px 0;
+	}	
+
+
+
+	&__content{
+
+		display: block;
+		margin-top: 20px;
+	}
+
+
+	&__input{
+		border: 0;
+		border-bottom: 1px solid $colorGray;
+		border-radius: 0;
+		padding: 17px 6px;
+	}
+
+
+
+	&__select{
+		border: 0;
+		border-bottom: 0;
+		border-bottom: 1px solid $colorGray;
+		padding: 0px 0;
+		height: 44px !important;
+
+	}
+
+
+	&__checkout{
+
+		margin-left: 20px;
+
+	}
+
+
+
+	&__checkInp{
+
+		-moz-appearance: none;
+		appearance: none;
+		-webkit-appearance: none;
+		width: 20px;
+		height: 20px;
+		background-color: $color-white;
+		border: 1px solid $colorGray;
+		top: -4px;
+		outline: 0 !important;
+	}
+
+
+	:checked{
+		
+		background-color:$colorPrimary;
+		
+	};
+
+
+	&__Checked{
+		margin-top: 50px;
+	}
+
+
+	&__SubmitContainer{
+		display: flex;
+		justify-content:space-between;
+		align-items:center;
+		margin-top: 50px;
+	}
+
+
+	&__isUser{
+		margin-left: 86px;
+	}
+
+
+	&__addColor{
+		background-color: #2c3e50 !important;
+	}
+
+
+}
