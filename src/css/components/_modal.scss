@@ -2,17 +2,16 @@
 
   & .close{
     font-size: 3rem;
-    color: #000080;
+    color: $colorPrimary;
     outline: none;
 
   }
 
   &-title{
     font-size: 2rem;
-    color: #000080;
+    color: $colorPrimary;
     font-weight: 700;
-    text-transform: uppercase;
-    text-shadow: 0px 0px 1px;
+
 
   }
 
@@ -44,7 +43,11 @@
   }
 
   &__button{
-    padding: .5rem 1rem ; 
+    padding: .5rem 1rem ;
   }
-
+&__btnContainer{
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
 }

@@ -141,10 +141,8 @@
         padding-top: 1.5rem;
         font-size: 1.36rem;
         color: #fff;
-        cursor: pointer;
-        &__gray{
+         &__gray{
             color: #878787;
-            cursor: pointer;
 
         }
     }
@@ -174,7 +172,6 @@
         top: .5rem;
         right: 1.5rem;
         font-size: 2.3rem;
-        cursor: pointer;
 
         &--white{color:$color-white;}
         &--red{
@@ -193,7 +190,7 @@
     background-color: $color-white;
     // border: 1px solid $color-gray-light-1;
     transition: all .5s;
-    padding:2rem 1rem 0 5rem;
+    padding:2rem 1rem 0 2rem;
     margin-bottom: 2.5rem;
     border: 1px solid rgba(20,38,246,.2);
     border-radius: 1rem;
@@ -202,7 +199,7 @@
     &:hover{
         transform: translateY(-5px);
         box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
-        cursor: pointer;
+
         background-color: rgba(1,132,253,.05);
     }
     @include respond(phone) {
@@ -223,13 +220,13 @@
     }
 
     &--2{
-        background-color: #10C8D2;
+        background-color: $colorPrimary;
         transition: all .5s;
 
         &:hover{
             transform: translateY(-5px);
             box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
-            cursor: pointer;
+
             background-color: rgba(1,132,253,.4);
         }
 
@@ -305,7 +302,7 @@
     font-size: 1.6rem;
     display: inline-block;
     padding-bottom: 1rem;
-    color: #0184FD ;
+    color: $colorPrimary ;
     @include respond(phone) {
         display: block;
         padding-right: 3rem;
@@ -326,8 +323,7 @@
     font-size: 1.5rem;
     padding-bottom: .5rem;
     display: inline-block;
-    cursor: pointer;
-    color: #0184FD ;
+     color: $colorPrimary ;
     p{
             // white-space: nowrap;
             // overflow: hidden;
@@ -387,7 +383,7 @@
 }
 &__date{
     display: inline-block;
-    color: #0184FD ;
+    color: $colorPrimary ;
     margin-right: 3rem;
     font-size: 1.5rem;
     padding: 1rem 0 2rem 0;
@@ -410,7 +406,7 @@
     font-size: 1.5rem;
     padding:1rem 0 2rem 0;
     &--icon::before{
-        color: #0184FD ;
+        color: $colorPrimary ;
         margin-left: 0!important;
         margin-right: .5rem;
         font-size: 1.6rem!important;
@@ -444,10 +440,10 @@
         padding-top: 1.5rem;
         font-size: 1.36rem;
         color: $color-white;
-        cursor: pointer;
+
         &__gray{
             color: #878787;
-            cursor: pointer;
+
         }
     }
     &__premium{
@@ -472,7 +468,7 @@
         position: absolute;
         top: 1rem;
         right: 1.5rem;
-        cursor: pointer;
+
         &--white{color:$color-white;}
         &--primary{
             color: #0184FD ;

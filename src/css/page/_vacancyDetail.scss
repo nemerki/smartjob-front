@@ -1,0 +1,328 @@
+.vacance{
+  &__title{
+    background-color: $color-primary-dark;
+    padding: 2rem;
+    position:sticky;
+    top:0;
+    z-index: 9;
+    @include respond(phone) {
+      padding: 2rem 0;
+    }
+    &-name{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  &-name{
+    color: $color-white;
+    font-size: 1.8rem;
+    @include respond(phone) {
+      font-size: 1.2rem;
+    }
+  }
+  &-salaryBox{
+    @include respond(phone) {
+      text-align: right;
+    }
+  }
+  &-salary{
+    color: $color-white;
+    font-size: 1.6rem;
+    padding-right: 2rem;
+    @include respond(phone) {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding-right: 0;
+      display: block;
+    }
+  }
+  &__details{
+    text-align: center;
+    &--info{
+      p{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+
+
+        @include respond(phone) {
+          font-size: 1.2rem;
+        }
+      }
+
+    }
+    &--text{
+      text-align: left;
+      color: $color-gray;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      padding-left: 2.5rem;
+      dt{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      dd{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h1{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h2{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h3{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h4{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h5{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      h6{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      span{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      p{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+
+        // @include respond(phone) {
+        //     font-size: 1.3rem;
+        // }
+      }
+      strong{
+        text-align: left;
+        color: $color-gray;
+        font-size: 1.5rem;
+        font-weight: 400;
+        font-family:Comfortaa-b;
+        @include respond(phone) {
+          font-size: 1.3rem;
+        }
+      }
+      ul{
+        text-align: left;
+        color: $color-gray;
+        list-style: none;
+        padding-left: 0;
+        li{
+          font-weight: 400;
+          font-family:Comfortaa-b;
+          font-size: 1.5rem;
+          @include respond(phone) {
+            font-size: 1.3rem;
+          }
+          p{
+            display: inline-block;
+            @include respond(phone) {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    &-title{
+      text-align: left;
+      color: $color-primary-dark;
+      padding: 1rem 0;
+    }
+
+  }
+  &__infoCompany{
+    a{
+      color: $color-primary-dark;
+    }
+    padding: 1rem 2rem;
+    text-align: center;
+    border: 1px solid $color-gray-light-1;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    &-body{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 0;
+      font-size: 1.3rem;
+      color: $color-gray;
+      &-2{
+        padding: unset;
+        p{
+          text-transform: lowercase;
+          &:first-letter {
+            text-transform: uppercase;
+          }
+        }
+        p:first-child {
+
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          padding-right: .5rem;
+          text-align: left;
+          &:first-letter {
+            text-transform: uppercase;
+          }
+        }
+      }
+      &-icon::before{
+        color: $color-primary-dark;
+        font-size: 2rem;
+
+
+      }
+    }
+    &-salary{
+      color: $color-primary-dark;
+    }
+  }
+  &__info{
+    &-box{
+      // @include respond(tab-port) {
+      //     padding: 0 10rem;
+      //   }
+    }
+    &-bodyContent{
+      p{
+        text-align: right;
+      }
+    }
+    &-header{
+      background-color: $color-primary-dark;
+      padding: 1rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      color: $color-white;
+      font-size: 1.8rem;
+    }
+    &-body{
+      // display: flex;
+      padding: 2rem ;
+      // justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+      color: $color-gray;
+      text-align: left;
+       margin-bottom: 2rem;
+      @include respond(phone) {
+        padding: 2rem 1rem;
+        flex-wrap: wrap;
+      }
+    }
+    &-body1{
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      @include respond(phone) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &-bodyBox{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-content{
+        padding-top: 1rem;
+
+      }
+      &-icon::before{
+        color: $color-primary-dark;
+        font-size: 2.5rem;
+        padding-right: 2rem;
+        @include respond(phone) {
+          padding-right: .7rem;
+        }
+      }
+      &--list{
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        margin-top: 10px;
+        &-item{
+
+          display: inline;
+          &::before{
+            content: ''!important;
+            padding: 0;
+          }
+
+        }
+      }
+    }
+  }
+
+}

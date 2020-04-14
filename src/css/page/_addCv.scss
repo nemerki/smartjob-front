@@ -1,7 +1,7 @@
 .addCv{
 
 	padding: 5rem 0;
-	background-color: #e4e4e4;
+	background-color: #fff;
 
 	& h2,h3{
 		text-transform: uppercase;
@@ -16,7 +16,7 @@
 		width: 90%;
 	}
 
-	& input{
+	& .input{
 		overflow: visible;
 		display: block;
 		width: 100%;
@@ -69,7 +69,7 @@
 	& label{
 		display: inline-block;
 		margin-bottom: .5rem;
-		margin-top: 2rem;
+		margin-top: 1rem;
 		font-size: 1.4rem;
 		font-weight: 600;
 		text-transform: uppercase;

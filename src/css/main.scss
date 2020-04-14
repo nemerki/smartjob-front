@@ -9,7 +9,7 @@
 @import "base/d";
 
 
-@import "components/myBtn"; 
+@import "components/myBtn";
 @import "components/input";
 @import "components/card";
 @import "components/blogCard";
@@ -26,9 +26,10 @@
 @import "components/modal";
 @import "components/registerTab";
 @import "components/loginSocial";
+@import "components/otherVacancy";
 
-@import "layout/footer"; 
-@import "layout/grid"; 
+@import "layout/footer";
+@import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
 
@@ -38,6 +39,7 @@
 @import "page/addCv";
 @import "page/detail";
 @import "page/register";
+@import "page/vacancyDetail";
 
 
 @import "abstracts/bt5end";

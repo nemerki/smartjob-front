@@ -1,0 +1,52 @@
+.otherVacancy {
+  padding: 1rem 2rem;
+  border: 1px solid #efefef;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+
+  &__link {
+    color: $color-black;
+  }
+
+  &__head {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__headLeft {
+    width: 80%;
+  }
+
+  &__headRight {
+    width: 20%;
+  }
+
+  &__title {
+    @include font(Comfortaa-b, 20px, $colorSecondry);
+    line-height: 23px;
+    margin-bottom: 10px;
+  }
+
+  &__salary {
+    padding: 10px 4px;
+    background: $colorPrimary;
+    border-radius: 10px;
+    color: $color-white;
+    text-align: center;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    a{
+      color: $colorGray;
+    }
+
+  }
+
+  &__aboutjob{
+    height: 200px;
+  }
+
+}

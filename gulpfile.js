@@ -19,8 +19,8 @@ var path = {
         html: 'build/',
         js: 'build/js/',
         vendor: 'build/js/vendor/', //src deki vendor klasörünü buildeki vendor klasörüne eklemek için
-        css: 'build/css/main/',
-        images: 'build/img/',
+        css: '../../../backend/S/smartjob/themes/smartjob/assets/css/main/',
+        images: 'build/images/',
         fonts: 'build/fonts/',
         libs: 'build/libs/' //bower ile src klasörüne yüklediğim dosyaları build klasörüne eklemek için
     },
@@ -29,9 +29,9 @@ var path = {
         js: 'src/js/main/**/*.js',
         vendor: 'src/js/vendor/*.js',
         css: 'src/css/main.scss',
-        images: 'src/img/**/*.*',
+        images: 'src/images/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/**/'
+        libs: 'src/libs/**/*.*'
     },
     watch: { //Burada izlemek istediğimiz dosyaları belirtiyoruz
         html: 'src/**/*.html',
@@ -40,7 +40,7 @@ var path = {
         css: 'src/css/**/*.scss',
         images: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*',
-        libs: 'src/libs/'
+        libs: 'src/libs/*.*'
     },
 };
 

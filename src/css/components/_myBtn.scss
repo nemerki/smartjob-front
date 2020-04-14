@@ -49,12 +49,12 @@
         color: $color-white;
         @include respond(tab-port) {
             width: 100% ;
-            
+
           }
 
-    }  
+    }
     &--gray{
-        
+
         color: $color-gray-dark;
     }
     &-white{
@@ -63,28 +63,28 @@
             background-color: $color-white;
             color: $color-primary-dark;
         }
-    }  
+    }
     &--white{
         background-color: $color-white;
         border: 1px solid transparent;
         color: $color-primary-dark;
-    } 
+    }
     &--black{
         background-color: rgba($color: #000000, $alpha: .7);
         border: 1px solid transparent;
         color: $color-gray-dark;
-    }  
+    }
     &--icon{
         padding-right: 1rem;
-       
+
         &::before{
             font-size: 2rem!important;
         }
-    } 
+    }
     &__accordion{
         color: $color-white;
         font-size: 1.4rem;
-        background-color: #0184FD;
+        background-color: $colorPrimary;
         width: 100%;
         border-radius: 1rem;
         text-align: left;
@@ -99,7 +99,7 @@
             &-active{
                 color: $color-white;
                 background-color: $color-primary-dark;
-            }   
+            }
         }
         &:focus{
             border: unset;
@@ -110,9 +110,9 @@
             &-faq{
                 color: $color-primary-dark;
             }
-            
+
         }
-    }  
+    }
 }
 
 .btn__group{
@@ -124,7 +124,7 @@
 }
 
 .search-btn{
-  
+
     border-top-left-radius: unset;
     border-bottom-left-radius: unset;
     border-top-right-radius: 1rem;
@@ -149,6 +149,20 @@
         background-color: #0184FD;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
+    }
+
+    &__invers{
+        padding: .8rem 3rem;
+        font-size: 1.3rem;
+        line-height: 1.2rem;
+        border: 1px solid ;
+        border-radius: 1rem;
+        background-color: #fff;
+        color: #0184FD ;
+        cursor: pointer;
+        transition: all .3s;
+        box-sizing: border-box;
+        text-align: center;
     }
 
   }
