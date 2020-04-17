@@ -138,6 +138,23 @@
     padding: 0.5rem 1rem;
     color: #fff;
     cursor: pointer;
+    &-new {
+        border: 1px solid $color-primary-dark;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background-color: $color-primary-dark;
+        font-size: 15px;
+        cursor: pointer;
+        color: #fff;
+
+        @include respond(phone-land) {
+            padding: 10px;
+        }
+        @include respond(phone) {
+            padding: 10px;
+            font-size: 13px;
+        }
+    }
 
     &:hover{
         background-color: #0184FD;

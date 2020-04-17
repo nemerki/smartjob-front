@@ -29,8 +29,40 @@
             box-shadow:unset;
             border-color: unset;
             border: none;
-            background-color: $color-gray-light-5;
-            
+            background-color: $color-gray-light-5;   
+        }
+        &-new {
+            border-radius: 0.5rem;
+            border: 1px solid #d6d6d6;
+            padding: 10px 20px;
+            padding-left: 30px;
+            font-size: 15px;
+            border-radius: 10px !important;
+
+            @include respond(phone-land) {
+                padding: 10px;
+            }
+
+            @include respond(phone) {
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 20px;
+
+                @include respond(phone-land) {
+                    padding-left: 10px;
+                }
+
+                @include respond(phone) {
+                    padding-left: 10px;
+                    font-size: 13px;
+                }
+
+            }
+
         }
     }
 
@@ -38,9 +70,24 @@
 
 .input__group{
     padding: 6rem 0 2rem 0;
+    &-new {
+        width: 70%;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+
+        @include respond(main-img-resp-1) {
+            width: 100%;
+            padding: 3rem 0 2rem 0;
+        }       
+    }
 }
 
-
+.input-group-append-new {
+    margin-left: 1rem;
+}
 
 
 .form {
