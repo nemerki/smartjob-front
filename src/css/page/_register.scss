@@ -1,21 +1,23 @@
-.register{
-	background-image: url('../../images/body-bg.jpg');
-	background-repeat: no-repeat;
-	background-size:cover;
-	display: block;
-	background-position: center;
+.register {
+  background-image: url('../../images/body-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-position: center;
 
-	&__leftSide{
-		width:50%;
-		display: block;
-		height: 900px;
-		@include respondmax (lg)
-		{
-			width:100%;
-		}
-	}
+  &__leftSide {
+    width: 50%;
+    display: block;
+    height: 900px;
+    @include respondmax (lg) {
+      width: 100%;
+    }
+  }
 
-	
+  &__form {
+    font-size: 16px;
+  }
+
 }
 
 

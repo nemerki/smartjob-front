@@ -1,12 +1,12 @@
 .registerTab{
-	
+
     height: 100%;
     background-color: #fff;
     border-radius: 24px;
     margin: 40px 0;
     padding: 21px;
 
-	
+
 	&__btnContainer{
 		display:flex;
 		height: 100%;
@@ -22,7 +22,7 @@
 		border-radius: 5px;
 		color: $color-white;
 	    padding: 10px 0;
-	}	
+	}
 
 
 
@@ -38,6 +38,7 @@
 		border-bottom: 1px solid $colorGray;
 		border-radius: 0;
 		padding: 17px 6px;
+		font-size: 14px;
 	}
 
 
@@ -75,9 +76,9 @@
 
 
 	:checked{
-		
+
 		background-color:$colorPrimary;
-		
+
 	};
 
 
