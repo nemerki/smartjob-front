@@ -23,8 +23,10 @@
     display: inline-block;
     border-bottom: .25rem solid ;
     font-weight: bold;
-
     margin-bottom: 3rem;
+    &--white{
+        color:$color-white;
+    }
 }
 
 .div-headering{
