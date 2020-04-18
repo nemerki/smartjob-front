@@ -20,6 +20,7 @@
     "bootstrap": "^4.1.0",
     "jquery": "^3.3.1",
     "air-datepicker": "^2.2.3",
-    "components-font-awesome": "^5.12.1"
+    "components-font-awesome": "^5.12.1",
+    "owl.carousel": "^2.3.4"
   }
 }
