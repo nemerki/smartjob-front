@@ -2,7 +2,7 @@
   "name": "jtsage-datebox-jqm",
   "title": "JTSage DateBox (jQueryMobile)",
   "description": "Plugin to provide a framework agnostic Date and Time Picker (jQueryMobile Version)",
-  "version": "5.1.5",
+  "version": "5.3.3",
   "supports": {
     "jqm": "1.4.5"
   },

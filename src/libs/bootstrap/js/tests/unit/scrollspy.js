@@ -16,6 +16,7 @@ $(function () {
     afterEach: function () {
       $.fn.scrollspy = $.fn.bootstrapScrollspy
       delete $.fn.bootstrapScrollspy
+      $('#qunit-fixture').html('')
     }
   })
 
@@ -200,7 +201,9 @@ $(function () {
     var done = assert.async()
     var testElementIsActiveAfterScroll = function (element, target) {
       var deferred = $.Deferred()
-      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top)
+      // add top padding to fix Chrome on Android failures
+      var paddingTop = 5
+      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top) + paddingTop
       $content.one('scroll', function () {
         assert.ok($(element).hasClass('active'), 'target:' + target + ', element' + element)
         deferred.resolve()
@@ -244,7 +247,9 @@ $(function () {
     var done = assert.async()
     var testElementIsActiveAfterScroll = function (element, target) {
       var deferred = $.Deferred()
-      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top)
+      // add top padding to fix Chrome on Android failures
+      var paddingTop = 5
+      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top) + paddingTop
       $content.one('scroll', function () {
         assert.ok($(element).hasClass('active'), 'target:' + target + ', element' + element)
         deferred.resolve()
@@ -288,7 +293,9 @@ $(function () {
     var done = assert.async()
     var testElementIsActiveAfterScroll = function (element, target) {
       var deferred = $.Deferred()
-      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top)
+      // add top padding to fix Chrome on Android failures
+      var paddingTop = 5
+      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top) + paddingTop
       $content.one('scroll', function () {
         assert.ok($(element).hasClass('active'), 'target:' + target + ', element' + element)
         deferred.resolve()
@@ -603,7 +610,9 @@ $(function () {
 
     var testElementIsActiveAfterScroll = function (element, target) {
       var deferred = $.Deferred()
-      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top)
+      // add top padding to fix Chrome on Android failures
+      var paddingTop = 5
+      var scrollHeight = Math.ceil($content.scrollTop() + $(target).position().top) + paddingTop
       $content.one('scroll', function () {
         assert.ok($(element).hasClass('active'), 'target:' + target + ', element: ' + element)
         deferred.resolve()

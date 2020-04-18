@@ -2,7 +2,7 @@
   "name": "jtsage-datebox-uikit",
   "title": "JTSage DateBox (UIKit)",
   "description": "Plugin to provide a framework agnostic Date and Time Picker (UIKit Version)",
-  "version": "5.1.5",
+  "version": "5.3.3",
   "supports": {
     "uikit": "3.0.3"
   },

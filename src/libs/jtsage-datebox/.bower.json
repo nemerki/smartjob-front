@@ -19,15 +19,14 @@
     "test",
     "tests"
   ],
-  "version": "5.1.5",
-  "_release": "5.1.5",
+  "version": "5.3.3",
+  "_release": "5.3.3",
   "_resolution": {
     "type": "version",
-    "tag": "5.1.5",
-    "commit": "7ba8be318448f4980e56a40d5e46cbceb38e1ea3"
+    "tag": "5.3.3",
+    "commit": "a20459c10ad9b3d711e509c6018850b426445131"
   },
   "_source": "https://github.com/jtsage/datebox-builds.git",
   "_target": "^5.1.5",
-  "_originalSource": "jtsage-datebox",
-  "_direct": true
+  "_originalSource": "jtsage-datebox"
 }
