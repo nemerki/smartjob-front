@@ -1,0 +1,89 @@
+.category{
+    padding: 5rem 0;
+    &__btnBox{
+        margin-top: 5rem;
+        text-align: center;
+    }
+    &__box{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    &__icon{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        border-radius: 50%;
+        font-size: 4rem;
+        text-align: center;
+        width: 10rem;
+        padding: 2rem;
+        margin: 0 auto;
+        color: $colorPrimary;
+    }
+    &__title{
+        color: $color-black;
+        font-weight: 600;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    &__count{
+        font-size: 1.3rem;
+    }
+}
+
+.count{
+    background-color: $color-primary-dark;
+    padding: 4rem 0;
+    &__box{
+        text-align: center;
+        color: $color-white;
+    }
+    &__icon{
+        font-size: 4.5rem;
+    }
+    &__num{
+        font-size: 3rem;
+        margin-top: 0.5rem;
+        font-weight: 600;
+    }
+    &__title{
+        font-size: 1.5rem
+    }
+}
+
+.recentJobs{
+    text-align: center;
+    padding: 3rem 0;
+    &__titleBox{
+        margin-bottom: 2rem;
+    }
+    &__titleText{
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        padding: 2rem;
+        border-radius: 1rem;
+        margin-bottom: 3rem;
+    }
+    &__contentTitle{
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    &__contentInfo{
+        display: flex;
+        margin-top: 0.5rem;
+        &--inner{
+            font-size: 1.5rem;
+            margin-right: 2rem;
+            color: $color-gray-light-4;
+            i{
+                margin-right: 2rem; 
+            }
+        }
+    }
+    
+}
