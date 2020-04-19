@@ -1,6 +1,6 @@
 .form__control{
     background-color: transparent;
-    border: 1px solid $color-gray-light-2;
+    border: 1px solid $color-gray-light-10;
     color: $color-gray-dark;
     border-radius: 1rem;
     padding: 1.2rem 2rem;
@@ -289,7 +289,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: -1px;
+        bottom: -12px;
         background-color: #fff;
         padding: .5rem;
         cursor: pointer;
