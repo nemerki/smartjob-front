@@ -1,5 +1,40 @@
 .category{
     padding: 5rem 0;
+    text-align: center;
+    &__searchBox{
+        background: $color-gray-light-4;
+        border-radius: 6rem;
+        margin: 5rem 0;
+        padding: 1rem;
+    }
+    &__field{
+        width: 100%;
+        position: relative;
+        &::before{
+            position: absolute;
+            right: 0;
+            top: 17px;
+            width: 1px;
+            height: 30px;
+            background: #e8ecec;
+            content: "";
+            z-index: 1;
+        }
+    }
+    &__fieldInput{
+        border-radius: 40px 0px 0px 40px;
+        float: left;
+        width: 100%;
+        background: no-repeat;
+        border: none;
+        font-size: 13px;
+        color: #888888;
+        margin: 0;
+        padding: 0 70px 0 30px;
+        height: 61px;
+        line-height: 61px;
+        background-color: $color-white;
+    }
     &__btnBox{
         margin-top: 5rem;
         text-align: center;
@@ -86,4 +121,15 @@
         }
     }
     
+}
+.companies{
+    text-align: center;
+    padding: 5rem 0;
+
+    &__item{
+        border:  0.1rem solid $color-gray-light-4;
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 20rem;
+    }
 }

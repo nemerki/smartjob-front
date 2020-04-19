@@ -1,0 +1,193 @@
+.userProfile{
+    padding: 10rem 0;
+    &__left{
+        box-shadow: 0px 8px 18.9px 2.1px rgba(67, 67, 67, 0.09);
+        border-radius: 1rem;
+    }
+    &__name{
+        padding: 1rem;
+        text-align: center;
+        color: $color-gray;
+        h3{
+            margin-bottom: 0;
+        }
+    }
+    &__logo{
+        padding: 1rem 4rem;
+       text-align: center;
+        img{
+            height: 17.5rem;
+            width: 17.5rem;
+            border-radius: 50%;
+        }
+    }
+    &__list{
+        padding-left: unset;
+        list-style: none;
+
+        &--item{
+            
+            border-left:4px solid transparent;
+            border-top: 1px solid $color-gray-light-1;
+           
+            &:hover{
+                background-color: $color-gray-light-1;
+                border-left:3px solid $color-primary-dark;
+                &:last-child{
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 1rem;
+                }
+
+            }
+        }
+        &--link{
+            color: $color-gray;
+            padding: 1.5rem 4rem;
+            font-size: 1.5rem;
+            display: block;
+            i{
+                margin-right: 1rem;
+            }
+        }
+    }
+    &__capability{
+        text-align: left;
+        color: $color-gray;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        h3{
+            font-weight: 400;
+        }
+    }
+    &__card{
+        box-shadow: 0px 8px 18.9px 2.1px rgba(67, 67, 67, 0.09);
+        padding: 2rem 0;
+        text-align: center;
+        margin-bottom: 2rem;
+        border-radius: 1rem;
+        &--title{
+            color: $color-primary-dark;
+            font-size: 1.5rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 0 1rem;
+            height: 2.5rem;
+            line-height: 2.5rem;
+        }
+        &--count{
+            display: block;
+            font-size: 3.2rem;
+            color: $color-gray;
+            margin: 3rem 0;
+        }
+        &--description{
+            font-size: 1.1rem;
+            color: $color-gray-light-2;
+        }
+    }
+
+    &__tableTitle{
+        font-size: 16px;
+        color: $color-black;
+        font-weight: 600;
+        display: block;
+    }
+    &__jobAdress{
+        font-size: 13px;
+        color: #888888;
+        float: left;
+        line-height: 10px;
+        margin-top: 8px;
+        i{
+            margin-right: 1rem;
+        }
+    }
+    &__jobTime{
+        display: table;
+        font-size: 13px;
+        color: #888888;
+    }
+
+    &__jobStatus{
+        display: table;
+        font-size: 13px;
+        color: $color-primary-dark;
+    }   
+    &__action{
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        li{
+            float: left;
+            margin: 0;
+            position: relative;
+            list-style: outside none none;
+            &:hover{
+                span{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            
+            span{
+                position: absolute;
+                left: 50%;
+                bottom: 100%;
+                opacity: 0;
+                visibility: hidden;
+                background: #0f36a5;
+                color: #ffffff;
+                width: 80px;
+                font-size: 12px;
+                padding: 5px 0;
+                border-radius: 8px;
+                margin-left: -40px;
+                margin-bottom: 9px;
+            }
+            a{
+                float: left;
+                font-size: 15px;
+                color: #9c9c9c;
+                padding: 0 6px;
+                
+                i{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+  
+    &__table{
+
+       table{
+            float: left;
+            width: calc(100% - 30px);
+            margin-top: 50px;
+            margin-bottom: 60px;
+            margin-left: 30px;
+
+            thead {
+                border-bottom: 1px solid #e8ecec;
+                tr{
+                    td {
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: $color-primary-dark;
+                        padding-bottom: 14px;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        vertical-align: middle;
+                        padding: 29px 0;
+                        border-bottom: 1px solid #e8ecec;
+                    }
+                }
+            }
+        }
+       
+    } 
+}
