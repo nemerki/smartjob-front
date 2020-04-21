@@ -71,9 +71,6 @@
 .input__group{
     padding: 6rem 0 2rem 0;
     &-new {
-        width: 70%;
-        margin: 0 auto;
-
         @include respond(tab-port) {
             width: 100%;
         }
@@ -320,4 +317,18 @@ input[type=checkbox]
  {
   
   cursor: pointer;
+}
+
+.has-error{
+    p{
+        color:$colorSecondry;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+    input{
+        border-color: $colorSecondry;
+    }
+    select{
+        border-color: $colorSecondry;
+    }
 }
