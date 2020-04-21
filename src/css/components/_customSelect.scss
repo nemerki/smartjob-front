@@ -8,17 +8,21 @@
 .select-selected {
   background-color: $color-white;
   color: #888888;
-  padding: 0 70px 0 30px;
+  padding: 0 30px;
+  height: 61px;
+  line-height: 61px;
+  text-align: left;
+  font-size: 13px;
 /*style the arrow inside the select element:*/
   &::after {
     position: absolute;
     content: "";
-    top: 14px;
-    right: 10px;
+    top: 30px;
+    right: 15px;
     width: 0;
     height: 0;
     border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
+    border-color: $color-gray-light-10 transparent transparent transparent;
   }
 }
 
@@ -30,13 +34,18 @@
 }
 
 /*style the items (options), including the selected item:*/
-.select-items div,.select-selected {
-  color: #888888;
-  padding: 3rem 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
+.select-items  {
+  margin-top: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  div{
+    color: #888888;
+    cursor: pointer;
+    user-select: none;
+    padding: 2rem;
+    font-size: 13px;
+    text-align: left;
+  }
+  
 }
 
 /*style items (options):*/

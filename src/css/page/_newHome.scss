@@ -6,10 +6,31 @@
         border-radius: 6rem;
         margin: 5rem 0;
         padding: 1rem;
+        @include respond(phone) {
+            width: 100%;
+            border-radius: 0;
+          }
+    }
+    &__searchBtn{
+        border-radius: 0px 40px 40px 0px;
+        font-size: 15px;
+        font-weight: bold;
+        background: $color-primary-dark;
+        padding: 19.5px 0px;
+        width: 100%;
+        color: $color-white;
+        border: 0;
+        @include respond(phone) {
+            width: 100%;
+            border-radius: 0;
+          }
     }
     &__field{
         width: 100%;
         position: relative;
+        @include respond(phone) {
+            margin-bottom: 1rem;
+          }
         &::before{
             position: absolute;
             right: 0;
@@ -19,6 +40,7 @@
             background: #e8ecec;
             content: "";
             z-index: 1;
+            
         }
     }
     &__fieldInput{
@@ -34,6 +56,10 @@
         height: 61px;
         line-height: 61px;
         background-color: $color-white;
+        @include respond(phone) {
+            border-radius: 0;
+            margin-bottom: 1rem;
+          }
     }
     &__btnBox{
         margin-top: 5rem;
@@ -52,6 +78,11 @@
         padding: 2rem;
         margin: 0 auto;
         color: $colorPrimary;
+        cursor: pointer;
+        &:hover{
+            background-color: $colorPrimary;
+            color: $color-white;
+        }
     }
     &__title{
         color: $color-black;
