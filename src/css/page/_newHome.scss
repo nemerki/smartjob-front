@@ -3,7 +3,7 @@
     text-align: center;
     &__searchBox{
         background: $color-gray-light-4;
-        border-radius: 6rem;
+        border-radius: 1rem;
         margin: 5rem 0;
         padding: 1rem;
         @include respond(phone) {
@@ -12,7 +12,7 @@
           }
     }
     &__searchBtn{
-        border-radius: 0px 40px 40px 0px;
+        border-radius: 0px 1rem 1rem 0px;
         font-size: 15px;
         font-weight: bold;
         background: $color-primary-dark;
@@ -44,7 +44,7 @@
         }
     }
     &__fieldInput{
-        border-radius: 40px 0px 0px 40px;
+        border-radius: 1rem 0px 0px 1rem;
         float: left;
         width: 100%;
         background: no-repeat;
@@ -97,21 +97,21 @@
 
 .count{
     background-color: $color-primary-dark;
-    padding: 4rem 0;
+    padding: 2rem 0;
     &__box{
         text-align: center;
         color: $color-white;
     }
     &__icon{
-        font-size: 4.5rem;
+        font-size: 3.5rem;
     }
     &__num{
-        font-size: 3rem;
+        font-size: 2rem;
         margin-top: 0.5rem;
         font-weight: 600;
     }
     &__title{
-        font-size: 1.5rem
+        font-size: 1.3rem
     }
 }
 
@@ -148,6 +148,7 @@
             color: $color-gray-light-4;
             i{
                 margin-right: 2rem; 
+                color: $color-primary-dark;
             }
         }
     }

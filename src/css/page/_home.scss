@@ -1,58 +1,106 @@
 
-.main-categories{
-    padding-bottom: 5rem;
-    background-image: url(../../images/sol.png),url(../../images/sag.png);
-    background-position:60px 100px, right 130px top 170px;
-    background-repeat: no-repeat,no-repeat;
-    background-size: 10%;
-    @include respond(phone) {
-        background-image:none;
-      }
-      @include respond(phone-land) {
-        background-image:none;
-      }
-      @include respond(main-img-resp) {
-        background-position: 18px 100px, right 20px top 170px;
-      }
-      @include respond(main-img-resp-2) {
-        background-position: 40px 100px, right 60px top 170px;
-      }
-      @include respond(main-img-resp-1) {
-        background-image:none;
-      }
-    &__box{
-        padding: 0 10rem;
-        @include respond(phone) {
-            padding:0 1rem;
-          }
-    }
-    &__group{
-        text-align: center;
-    }
-    &__item{
-        padding: .5rem 0;
-        font-size: 1.3rem;
+.main-categories {
+    &__div {
         width: 100%;
-        &--link{
-            border: 1px solid $color-gray;
-            color: $color-gray;
-            padding: 1rem 1rem;
-            display: block;
-            border-radius: .5rem;
-            font-family:Comfortaa-b;
-            // font-weight: bold;
-            &:hover{
-                border-radius: .5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+        &--name {
+            font-size: 14px;
+            color: #494446;
+            font-weight: bold;
+        }
+
+        &--advert {
+            font-size: 12px;
+            color: #494446;
+        }
+
+        &--item {
+            width: 25%;
+            i{
+                font-size: 6rem;
+                margin-bottom: 18px;
+            }
+            @include respond(main-img-resp) {
+                width: 50%;
+            }
+
+            @include respond(main-img-resp-1) {
+                width: 100%;
+                margin-bottom: 10px;
+                border: none;
+            }
+
+            &:not(:nth-child(4n +4)){
+                border-right: 1px solid #f6f6f6;
+                @include respond(main-img-resp) {
+                    border-right:none;
+                }
+            }
+
+            &:not(:nth-child(-n +4)){
+                border-top: 1px solid #f6f6f6;
+                @include respond(main-img-resp) {
+                    border-top:none;
+                }
+            }
+
+            
+            &:not(:nth-child(2n + 2)){
+                @include respond(main-img-resp) {
+                    border-right: 1px solid #f6f6f6;
+                }
+                @include respond(main-img-resp-1) {
+                   
+                    border: none;
+                }
+            }
+
+            &:not(:nth-last-child(n+7)){
+                @include respond(main-img-resp) {
+                    border-top: 1px solid #f6f6f6;
+                }
+                @include respond(main-img-resp-1) {
+                   
+                    border: none;
+                }
+            }
+
+            &-last {
+                display: none;
+
+                @include respond(main-img-resp) {
+                    display: block;
+                }
+            }
+        }
+
+        &--link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            transition: all .5s;
+
+            &:hover {
                 background-color: $color-primary-dark;
-                color: $color-white;
-                border-color:transparent;
+                // box-shadow: 0px 10px 25px -6px rgba(0, 0, 0, 0.15) !important;
+                i {
+                    color: $color-white;
+                   
+                }
+                span {
+                    color: $color-white;
+                    
+                }
             }
         }
     }
-   
 }
-
-
 
 .premium{
     // margin-top: -10rem;
