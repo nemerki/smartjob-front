@@ -19,7 +19,7 @@
         }
 
         &--item {
-            width: 25%;
+            width: 20%;
             i{
                 font-size: 6rem;
                 margin-bottom: 18px;
@@ -48,13 +48,13 @@
                 }
             }
 
-            
+
             &:not(:nth-child(2n + 2)){
                 @include respond(main-img-resp) {
                     border-right: 1px solid #f6f6f6;
                 }
                 @include respond(main-img-resp-1) {
-                   
+
                     border: none;
                 }
             }
@@ -64,7 +64,7 @@
                     border-top: 1px solid #f6f6f6;
                 }
                 @include respond(main-img-resp-1) {
-                   
+
                     border: none;
                 }
             }
@@ -83,7 +83,7 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
             transition: all .5s;
 
             &:hover {
@@ -91,11 +91,11 @@
                 // box-shadow: 0px 10px 25px -6px rgba(0, 0, 0, 0.15) !important;
                 i {
                     color: $color-white;
-                   
+
                 }
                 span {
                     color: $color-white;
-                    
+
                 }
             }
         }
@@ -117,7 +117,7 @@
     height: 100%;
     &--img{
         margin-bottom: 3rem;
-    
+
         &-1{
             width: 100%;
             height: 100%;
@@ -146,7 +146,7 @@
         margin-bottom: 2rem;
         color: $color-white;
         @include respond(phone) {
-           
+
             font-size: 2.5rem;
           }
         &-2{
@@ -162,9 +162,9 @@
             color: $color-white;
         }
         &-4{
-            
+
             margin-bottom: 2rem!important;
-         
+
         }
         &-5{
             font-size: 3.5rem;
@@ -180,12 +180,12 @@
         &-6{
             margin-bottom: 0;
             @include respond(phone) {
-                
+
                 font-size: 1.2rem;
-              
+
               }
         }
-      
+
     }
     &--recruitersBox{
         display: flex;
@@ -224,7 +224,7 @@
 }
 .quote
 {
-  background: url(../../images/min-slide.jpg) no-repeat center center ; 
+  background: url(../../images/min-slide.jpg) no-repeat center center ;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -237,7 +237,7 @@
 
 
 .more-vacanse{
-    
+
     font-size: 1.4rem;
     color: $color-gray;
     &:hover{
@@ -275,7 +275,7 @@
         @include respond(phone) {
             display: block;
           }
-       
+
         &--People {
             display: flex;
             justify-content: space-between;
@@ -284,7 +284,7 @@
             @include respond(main-img-resp-1) {
                justify-content: center;
               }
-           
+
 
             &--link,
             &--link:link,
@@ -324,7 +324,7 @@
                 }
             }
 
-           
+
         }
     }
 }
