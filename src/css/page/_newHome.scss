@@ -1,8 +1,36 @@
 .category{
-    padding: 5rem 0;
     text-align: center;
+    &__postResumeBox{
+        padding: 4rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    &__postResume{
+        padding: 1rem 0;
+        margin-right: 2rem;
+    }
+    &__postResumeLink{
+        font-size: 16px;
+        color: $color-primary-dark;
+        font-weight: 700;
+        padding: 1rem 2rem;
+        border: 1px solid $color-primary-dark;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover{
+            background-color: $color-primary-dark;
+            color: $color-white;
+        }
+
+        &--fill{
+            background-color: $color-primary-dark;
+            border: 0;
+            color: $color-white;
+        }
+    }
     &__searchBox{
-        background: $color-gray-light-4;
         border-radius: 1rem;
         margin: 5rem 0;
         padding: 1rem;
@@ -12,14 +40,18 @@
           }
     }
     &__searchBtn{
-        border-radius: 0px 1rem 1rem 0px;
+        border-radius: 8px;
         font-size: 15px;
         font-weight: bold;
         background: $color-primary-dark;
-        padding: 19.5px 0px;
+        height: 61px;
         width: 100%;
         color: $color-white;
         border: 0;
+        float: left;
+        i{
+            font-size: 25px;
+        }
         @include respond(phone) {
             width: 100%;
             border-radius: 0;
@@ -31,21 +63,21 @@
         @include respond(phone) {
             margin-bottom: 1rem;
           }
-        &::before{
-            position: absolute;
-            right: 0;
-            top: 17px;
-            width: 1px;
-            height: 30px;
-            background: #e8ecec;
-            content: "";
-            z-index: 1;
+        // &::before{
+        //     position: absolute;
+        //     right: 0;
+        //     top: 17px;
+        //     width: 1px;
+        //     height: 30px;
+        //     background: #e8ecec;
+        //     content: "";
+        //     z-index: 1;
             
-        }
+        // }
     }
     &__fieldInput{
-        border-radius: 1rem 0px 0px 1rem;
-        float: left;
+        border-radius: 8px;
+        border: 1px solid $color-primary-dark !important;
         width: 100%;
         background: no-repeat;
         border: none;
@@ -56,6 +88,9 @@
         height: 61px;
         line-height: 61px;
         background-color: $color-white;
+        &:focus{
+            outline: 0;
+        }
         @include respond(phone) {
             border-radius: 0;
             margin-bottom: 1rem;
@@ -159,9 +194,57 @@
     padding: 5rem 0;
 
     &__item{
-        border:  0.1rem solid $color-gray-light-4;
-        border-radius: 1rem;
-        padding: 2rem;
-        width: 20rem;
+        border-radius: 3px;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        background-image: linear-gradient(to top, $color-white, rgba(36, 109, 248, 0.03));
+        padding: 30px 10px;
+        margin-bottom: 30px;
+        text-align: center;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $color-white;
+            .companies__body{
+                p{
+                    color: $color-primary-dark;
+                }
+            }
+            .companies__link{
+                background-color: $color-primary-dark;
+                color: $color-white;
+            }
+
+        }
+    }
+    &__logoBox{
+        border-bottom: 1px solid rgba($color-black, 0.08);
+        padding-bottom: 20px;
+        max-width: 90px;
+        margin: 0 auto 20px;
+    }
+    &__body{
+        p{
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+            font-weight: 700;
+            color: $color-black;
+        }
+        span{
+            display: block;
+            font-size: 1.4rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            color: $color-gray-light-8;
+        }
+    }
+    &__link{
+        background: rgba(36, 109, 248, 0.1);
+        color: #246df8;
+        border-radius: 3px;
+        padding: 8px 20px;
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-top: 20px;
+        display: inline-block;
     }
 }

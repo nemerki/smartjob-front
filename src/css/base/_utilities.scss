@@ -3,6 +3,9 @@
 .u-margin-bottom-2{margin-bottom: 2rem;}
 .u-margin-bottom-5{margin-bottom: 5rem;}
 .expr-pad{padding: 1.18rem 0 6px 0!important;}
+.pad-l-8{
+    padding-left: 8px;
+}
 .pad-0{
     padding: 0;
     @include respond(phone) {

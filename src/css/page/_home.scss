@@ -95,9 +95,19 @@
                 }
                 span {
                     color: $color-white;
-
+                }
+                svg {
+                    fill: #fff;
+                    transition: all .5s;
                 }
             }
+        }
+        svg {
+            width: 50px;
+            height: 50px;
+            fill: $color-primary-dark;
+            margin-bottom: 18px;
+
         }
     }
 }
