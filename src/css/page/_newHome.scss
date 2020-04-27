@@ -72,7 +72,7 @@
         //     background: #e8ecec;
         //     content: "";
         //     z-index: 1;
-            
+
         // }
     }
     &__fieldInput{
@@ -132,16 +132,16 @@
 
 .count{
     background-color: $color-primary-dark;
-    padding: 2rem 0;
+    padding: 1rem 0;
     &__box{
         text-align: center;
         color: $color-white;
     }
     &__icon{
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
     &__num{
-        font-size: 2rem;
+        font-size: 1.7rem;
         margin-top: 0.5rem;
         font-weight: 600;
     }
@@ -182,12 +182,12 @@
             margin-right: 2rem;
             color: $color-gray-light-4;
             i{
-                margin-right: 2rem; 
+                margin-right: 2rem;
                 color: $color-primary-dark;
             }
         }
     }
-    
+
 }
 .companies{
     text-align: center;
