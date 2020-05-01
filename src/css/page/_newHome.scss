@@ -26,8 +26,12 @@
 
         &--fill{
             background-color: $color-primary-dark;
-            border: 0;
+            border: 1px solid $color-primary-dark;
             color: $color-white;
+            &:hover{
+                background-color: $color-white;
+                color: $color-primary-dark;
+            }
         }
     }
     &__searchBox{
@@ -133,6 +137,14 @@
 .count{
     background-color: $color-primary-dark;
     padding: 1rem 0;
+    &__carousel{
+        display: flex;
+        justify-content: center;
+        .owl-stage-outer{
+            display: flex;
+            justify-content: center;
+        }
+    }
     &__box{
         text-align: center;
         color: $color-white;
@@ -172,7 +184,19 @@
     &__contentTitle{
         font-size: 2rem;
         font-weight: 600;
-        text-align: left;
+        text-align: left; 
+        
+        a{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 270px;
+            color: $color-black;
+            display: inline-block;
+            &:hover{
+                color: $color-primary-dark;
+            }
+        }
     }
     &__contentInfo{
         display: flex;
@@ -181,6 +205,17 @@
             font-size: 1.5rem;
             margin-right: 1rem;
             color: $color-gray-light-4;
+            a{
+                color: $color-gray-light-9;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 160px;
+                display: inline-block;
+                &:hover{
+                    color: $color-primary-dark;
+                }
+            }
             i{
                 margin-right: 1rem;
                 color: $color-primary-dark;
