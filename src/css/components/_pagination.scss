@@ -1,0 +1,25 @@
+.paginations{
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    &__prev{
+        padding: 9px 25px !important;
+    }
+    nav{
+        ul{
+            li{
+                a{
+                    padding: 9px 15px;
+                    border-radius: 30px !important;
+                    border: 3px solid #edeff7;
+                    transition: all 0.4s ease 0s;
+                    &:hover{
+                        background-color: $color-primary-dark;
+                        border: 3px solid $color-primary-dark;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
