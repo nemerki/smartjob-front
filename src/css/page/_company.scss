@@ -1,0 +1,64 @@
+.company{
+    
+    &__searchBox{
+        padding: 7rem;
+    }
+    &__card{
+        border: 2px solid #e6e7ef;
+        border-radius: 8px;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 30px;
+        position: relative;
+        padding: 35px;
+        transition: all 0.4s ease 0s;
+        &:hover{
+            border: 2px solid $color-primary-dark;
+        }
+    }
+    &__logoBox{
+        a{
+            display: inline-block;
+            img{
+                border-radius: 8px;
+                border: 2px solid #e8ecec;
+            }
+        }
+    }
+    &__vacanceCount{
+        position: absolute;
+        right: 15px;
+        top: 14px;
+        font-size: 13px;
+        color: $color-primary-dark;
+    }
+    &__listInfo{
+        padding-top: 12px;
+        span{
+            width: 100%;
+            font-size: 13px;
+            color: $color-primary-dark;
+
+        }
+        h6{
+            width: 100%;
+            margin: 0;
+            font-size: 13px;            
+            margin-top: 13px;
+            color: $color-gray-light-9;
+            i{
+                margin-right: 1rem;
+                color: $color-gray-light-9;
+            }
+        }
+    }
+    &__name{
+        width: 100%;
+        font-size: 18px;
+        color: #202020;
+        margin-bottom: 7px;
+        font-weight: 500;
+        display: block;
+    }
+}

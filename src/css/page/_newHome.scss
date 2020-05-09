@@ -140,14 +140,23 @@
     &__carousel{
         display: flex;
         justify-content: center;
-        .owl-stage-outer{
+        .owl-stage{
+            width: 100% !important;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+
+            &::after{
+                content: none;
+            }
+        }
+        .owl-stage-outer{
+            
         }
     }
     &__box{
         text-align: center;
         color: $color-white;
+        border: 1px solid #ddd;
     }
     &__icon{
         font-size: 2rem;
@@ -165,8 +174,39 @@
 .recentJobs{
     text-align: center;
     padding: 3rem 0;
-    &__titleBox{
+    &__titleHeader{
         margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    &__titleBox{
+        display: flex;
+        align-items: center;
+    }
+    &__all{
+        margin-left: 20px;
+        font-size: 19px;
+        font-weight: bold; 
+        color: $color-gray-light-9; 
+        border-bottom: 2px solid $color-gray-light-9; 
+        &:hover{
+            color: $color-primary-dark;
+            border-color: $color-primary-dark; 
+        }
+    }
+    &__stats{
+        font-size: 17px;
+        font-weight: bold; 
+        color: $color-gray-light-9; 
+        a{
+            border-bottom: 2px solid $color-gray-light-9; 
+            color: $color-gray-light-9; 
+            &:hover{
+                color: $color-primary-dark;
+                border-color: $color-primary-dark; 
+            }
+        }
     }
     &__titleText{
         font-size: 1.5rem;
