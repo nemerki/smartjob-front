@@ -1,0 +1,67 @@
+.blog{
+    &__cardbx{
+        padding: 3rem 0;
+    }
+    &__card{
+        margin: 50px 10px;
+        padding: 20px 15px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 5px 20px rgba($color: $color-black, $alpha: 0.5);
+        position: relative;
+        height: 170px;
+        border-radius: 4px;
+        &:hover{
+            height: 280px;
+            .blog__content{
+                visibility: visible;
+                opacity: 1;
+                margin-top: 0px;
+                transition-delay: 0.3s;
+            }
+        }
+    }
+    &__imgbx{
+        position: relative;
+        height: 115px;
+        top: -60px;
+        width: 100%;
+        box-shadow: 0 5px 20px rgba($color: $color-black, $alpha: 0.2);
+        z-index: 1;
+        img{
+            width: 100%;
+            border-radius: 4px;
+        }
+    }
+
+    &__content{
+        position: relative;
+        margin-top: -130px;
+        padding: 8px;
+        transition: 0.3s ease-in-out;
+        text-align: center;
+        visibility: hidden;
+        opacity: 0;
+        color: #111;
+    }
+    &__title{
+        color: $color-black;
+        font-weight: 700;
+        margin-bottom: 0;
+        margin-top: 5px;
+        text-align: center;
+    }
+    &__text{
+        text-align: left;
+        font-size: 13px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    &__more{
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}

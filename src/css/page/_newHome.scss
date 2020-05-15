@@ -222,15 +222,15 @@
         margin-bottom: 3rem;
     }
     &__contentTitle{
-        font-size: 2rem;
+        font-size: 1.9rem;
         font-weight: 600;
         text-align: left; 
-        
+        min-height: 60px;
         a{
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 270px;
+            // white-space: nowrap;
+            // overflow: hidden;
+            // text-overflow: ellipsis;
+            // max-width: 270px;
             color: $color-black;
             display: inline-block;
             &:hover{
@@ -241,6 +241,7 @@
     &__contentInfo{
         display: flex;
         margin-top: 0.5rem;
+        line-height: normal;
         &--inner{
             font-size: 1.5rem;
             margin-right: 1rem;
