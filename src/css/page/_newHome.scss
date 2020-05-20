@@ -243,14 +243,11 @@
         margin-top: 0.5rem;
         line-height: normal;
         &--inner{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-right: 1rem;
             color: $color-gray-light-4;
             a{
-                color: $color-gray-light-9;
-                white-space: nowrap;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                color: $color-gray-light-9;            
                 max-width: 160px;
                 display: inline-block;
                 &:hover{
