@@ -1,0 +1,42 @@
+.contact{
+
+    &__img{
+       background-image: url(../../images/looking-job.jpg);
+       background-repeat: no-repeat;
+       padding: 8rem;
+       width: 100%;
+       position: relative;
+       &--circle{
+            position: absolute;
+            width: 24rem;
+            height: 12rem;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+            
+            background-color: $color-white;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            &-icon{
+                top: 25%;
+                left: 44%;
+                transform: translateX(-50%);
+                position: absolute;
+               
+            }
+       }
+    }
+
+    &__form{
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+        &--headering{
+            color: $color-gray-light-6;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+input:invalid {
+    box-shadow: none;
+}
