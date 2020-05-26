@@ -1,0 +1,22 @@
+.blogDetail{
+
+  &__title{
+    margin-top: 20px;
+    margin-bottom: 7px;
+    word-wrap: break-word;
+    font-size: 41px;
+    line-height: 50px;
+    font-weight: bold;
+  }
+  &__description{
+    font-size: 21px;
+    line-height: 39px;
+    font-family: Times New Roman;
+
+  }
+  &__content{
+    font-size: 19px;
+    font-family: Times New Roman;
+    line-height: 35px;
+  }
+}

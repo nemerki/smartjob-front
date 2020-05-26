@@ -418,6 +418,25 @@
         font-size: 1.2rem;
     }
 }
+&__category{
+    color: #0184FD ;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding:1rem 0 2rem 0;
+    margin-left: 3rem;
+    &--icon::before{
+        color: $colorPrimary ;
+        margin-left: 0!important;
+        margin-right: .5rem;
+        font-size: 1.6rem!important;
+    }
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+    @include respond(phone-land) {
+        font-size: 1.2rem;
+    }
+}
 &__btn{
         // margin-top: 2rem;
         display: inline-block;

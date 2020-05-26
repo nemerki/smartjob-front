@@ -1,0 +1,31 @@
+
+.vipItem{
+  background-color: $colorPrimary;
+  transition: all .5s;
+
+  &:hover{
+    transform: translateY(-5px);
+    box-shadow: 1px 3px 12px rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(1,132,253,.4);
+  }
+
+  & p,a,i{
+    color: #fff !important;
+  }
+
+  & .jobs-card__location--icon, & .jobs-card__date--icon{
+    color: #fff ;
+
+    &:before{
+      color: #fff;
+    }
+  }
+
+  & .jobs-card__location,& .jobs-card__date{
+    color: #fff;
+
+
+  }
+}
+

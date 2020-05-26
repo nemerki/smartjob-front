@@ -39,7 +39,7 @@
         margin-bottom: 0;
         &-list{
             display: inline-block;
-            margin-right:.4rem; 
+            margin-right:.4rem;
             margin-bottom: .5rem
         }
     }
@@ -47,7 +47,8 @@
 
 .jobs__phone{
     min-height: 7rem;
-    background-image: linear-gradient(to right bottom ,$color-primary-dark ,$color-primary);
+  margin-top: 20px;
+    background-image: linear-gradient(to right bottom ,$color-primary-dark ,$colorPrimary);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -55,7 +56,7 @@
     @include respond(desktop) {
         display: none;
       }
-    
+
     &-filterLink{
         color: $color-white;
         border: 1px solid;
@@ -74,7 +75,7 @@
         background-color: $color-white;
         overflow-x: hidden;
         transition: 0.5s;
-       
+
     }
     &-close{
         height: 6%;
@@ -117,11 +118,11 @@
             background-color: $color-white;
         }
     }
-    
+
 }
 
 
-  
+
     .student{
         // border: 1px solid $color-gray-light-1;
         box-shadow: 0px 10px 8.7px 1.3px rgba(166, 166, 166, 0.15);
@@ -129,12 +130,12 @@
         margin-bottom: 1rem;
         padding-top: 1rem;
     }
-  
+
   .addFilter{
-      
-      
+
+
       background-color: $color-primary-dark;
-      justify-content: center;  
+      justify-content: center;
       display: flex;
       align-items: center;
       &-btn{
@@ -143,8 +144,8 @@
         padding: 1rem;
         width: 100%;
         text-align: center;
-          
-      } 
+
+      }
   }
 
   .closebtn {
@@ -214,14 +215,14 @@
   }
 
   }
-  
+
 .checkbox-list{
     list-style: none;
    margin-left: 1rem;
    padding-left: 1rem;
     margin-bottom: 0;
 }
-  
+
 
 .pagination{
     align-items: center;
@@ -233,7 +234,7 @@
         a{
             color: $color-gray;
         }
-        
+
     }
     .active{
         background-color: $color-primary-dark;

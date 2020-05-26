@@ -34,40 +34,7 @@
                 border: none;
             }
 
-            &:not(:nth-child(4n +4)){
-                border-right: 1px solid #f6f6f6;
-                @include respond(main-img-resp) {
-                    border-right:none;
-                }
-            }
-
-            &:not(:nth-child(-n +4)){
-                border-top: 1px solid #f6f6f6;
-                @include respond(main-img-resp) {
-                    border-top:none;
-                }
-            }
-
-
-            &:not(:nth-child(2n + 2)){
-                @include respond(main-img-resp) {
-                    border-right: 1px solid #f6f6f6;
-                }
-                @include respond(main-img-resp-1) {
-
-                    border: none;
-                }
-            }
-
-            &:not(:nth-last-child(n+7)){
-                @include respond(main-img-resp) {
-                    border-top: 1px solid #f6f6f6;
-                }
-                @include respond(main-img-resp-1) {
-
-                    border: none;
-                }
-            }
+            border: 1px solid #f6f6f6;
 
             &-last {
                 display: none;
